@@ -1,0 +1,95 @@
+********SECTOR DENUNCIANTE 1 ***********
++NdeExpediente+----------LISTO--------
++AnioExpediente+----------LISTO--------
+"+sexo+"+"NombreDenunciante+"----------LISTO--------
++sexo+----------LISTO--------
++Dnidenunciante+----------LISTO--------
+"+DomicilioDenunciante+"----------LISTO--------
++NumeroDeTelefonoDenunciante+----------LISTO--------
++VinculoConElDenunciado+----------LISTO--------
++sexo+----------LISTO--------
+
+
+********SECTOR DENUNCIADO 2 ***********----------LISTO--------
++NombreDenunciado+----------LISTO--------
+"+sexo1+""+NombreDenunciado+"----------LISTO--------
++Dnidenunciado+----------LISTO--------
++DomicilioDenunciado+----------LISTO--------
++NumeroDeTelefonoDenunciado+----------LISTO--------
++sexo1+----------LISTO--------
+
+
+***************RELATA DENUNCIA 3*******************----------LISTO--------
++DenunciaConcreta+----------LISTO--------
+
+**********BUSQUEDA DE CONEXIDAD 4***************----------LISTO--------
+
++numexptecon+----------LISTO--------
++caratulacon+----------LISTO--------
+
+#"+cm+"----------LISTO--------(cantidad de meses)
+
+----------LISTO--------
+*****************SECTOR 5: MEDIDAS A TOMAR NORMALMENTE**************----------LISTO--------
+
++fiscal+----------LISTO--------
++cantidaddemeses+----------LISTO--------
++BotonDepanico+----------LISTO--------
+	+botondepanicocons+----------LISTO--------
+			+botondepanicores1+----------LISTO--------
+			+botondepanicores2+----------LISTO--------
++pupilarcons+----------LISTO--------
++pupilar+----------LISTO--------
+	+GuardaProvisoria+----------LISTO--------
+		+cantidadhijos+----------LISTO--------
+		+guardaprovisoriacons+----------LISTO--------
+
+
+
++cejume+----------LISTO--------
+
+
++cuerpomedico+----------LISTO--------
++informedeinteraccionfamiliar+----------LISTO--------
+l
+
+----------LISTO------------------LISTO------------------LISTO------------------LISTO------------------LISTO--------
+
+
+**************SECTOR 6: MEDIDAS ESPECIALES******************
+
+
+si +Primeraaudiencia+ es igual a SI entonces
+	Cantidadaudiencia
+	+ca+
+	((+NUMERACION+" "Señalese primera audiencia en los términos del art. 5 de la Ley XIV Nº 6  a fin de que comparezca "+ca+" " a fin de que informe sobre su situacion actual Notifiquese personalmente o por cédula.-"+"\n")
+
+
+
++anmac+
+	preguntar Que fojas denuncia arma? 
+	((+NUMERACION+" "Atento a lo vertido a +fojass+, librese oficio al Delegado  del ANMAC en la ciudad de Posadas-Misiones, a los efectos de que tenga a bien remitir con carácter URGENTE informe respecto de "+sexo1+" "+NombreDenunciado+", DNI Nº. +Dnidenunciado+ con domicilio en Bº a-3-2, Mz 29, Casa Nº 14, Posadas, Misiones. y telefono Nº: 3764-858190, se halla registrado ante esa Dirección como legitimo usuario de armas de fuego de uso civil y/o guerra, carácter y categoría condicional de la habilitación USO y/o PORTACIÓN. En caso positivo, informe respecto a los datos filiatorios completos, fecha de habilitación y expiración (Legajo, Lugar y Fecha).-"+"\n")
+
+si +drogadiccion+ = si
+	(+NUMERACION+"Dese intervención a la Subsecretaría de Prevención de Adicciones y Control de Drogas (tel. 4447797) dependiente del Ministerio de Salud, a fin de que con carácter de valiosa colaboración, a efectos de que tomen intervención en autos respecto a la situación de +presuntodrogadicto1+ y en el ámbito de su competencia adopten las medidas que estimen corresponder a través de la  Dirección de Asistencia y Rehabilitación (Centro Manantial tel. 44456759) a cargo de la Dra. Mariela Garnier, brinden colaboración y asesoramiento al grupo familiar de la denunciante +sexo+NombreDenunciante+ estos fines líbrese el oficio pertinente con URGENTE Y PREFERENTE DESPACHO cuya confección y diligenciamiento estará a cargo de la Defensoría Oficial patrocinante."+"\n")
+
+si +reintegrodebienes+ = si
+	(+NUMERACION+"En cuanto a la restitución de bienes considero que en razón de lo ordenado en la presente y a los efectos de evitar que se produzcan nuevas situaciones de violencia, deberá la Sra.xxxxxx denunciar bienes y designar una persona, los datos de la misma (nombre y apellido, D.N.I, etc) autorizada por la misma a participar en el acto de retiro de bienes, la que quedará en calidad de depositario judicial de las pertenencias que en su caso se les restituirán debiendo acreditar la titularidad de los mismos.+"\n")
+
+si +direcciondeinfancia+ = si
+	(+NUMERACION+"Líbrese oficio a la Dirección de Infancia del Ministerio de Desarrollo Social a efectos que evalúe la situación de los menores y disponga o proponga en forma URGENTE las medidas de protección que considere necesarias, remitiendo el informe correspondiente al suscripto a la mayor brevedad y las medidas adoptadas, todo ello en los términos de la Ley II No 16 art. 36, 37, 38 y 41 tercer párrafo.Quedando a cargo su confección y diligenciamiento de la Defensoría Patrocinante.+"\n")
+
+si +busquedayparaderoresu+ = si
+	("Agréguese el informe que antecede y en atención a lo comunicado, como así también a los efectos de que se efectivice la notificación de la medida ordenada  en la causa, líbrese oficio al Departamento de Búsqueda de destino y paradero de la Policía de la Provincia de Misiones, a fin de dar con el paradero del "+sexo1+" "+NombreDenunciado+" D.N.I Nº +Dnidenunciado+, y una vez habido, se proceda a informar al Defensor Oficial Nº1 de Violencia Familiar a cargo de la Dra. María Alejandra Ortega, a sus efectos. (Al suscripto) caso del juez+"\n")
+
+si alimentos = si 
+	"+alimentosenelcons+"(abajo de guardaprovisoria)
+	(+NUMERACION+")"En Doctrina se ha sostenido "....la importancia de la fijación de una cuota de alimentos provisorios en el procedimiento de denuncia de violencia familiar significa el mantenimiento de otras medidas de protección y el aseguramiento del derecho alimentarios de los niños...El denunciado que priva de las necesidades básicas alimentarias a sus hijos está ejerciendo violencia económica hacia ellos, en convergencia con otros tipos de violencia, como la psicológica, al perturbar su pleno desarrollo personal...(Autor: Ortiz, Diego O. - Fecha: 6-sep-2016, Cita: MJ-DOC-10037-AR | MJD10037).-
+		preguntar nombre de los/ el menor/res
+		+nombrealimentos1+
+		preguntar el monto ( DEBE PONER EL NUMERO Y ESCRIBIR EN LETRA)
+			+montoalbanconum+
+			+montoalbancoescrito+
+			"+alimentosresu+"
+			(+NUMERACION+")" ESTABLECER una cuota alimentaria a favor de  +nombrealimentos1+ en la suma de pesos +montoalbancoescrito+ ($+montoalbanconum+) que deberá abonar "+sexo1+" "+NombreDenunciado+" y depositar en la sección depósitos judiciales del Banco Macro del primero al diez de cada mes, por el término de 03 meses, bajo apercibimiento de ley. Haciendo saber a la denunciante que dado el carácter transitorio de las medidas adoptadas en esta causa, una vez vencido el plazo de vigencia de la cuota deberá acreditar el inicio de la causa de alimentos por ante el fuero pertinente, bajo apercibimiento de ley. 
+			(+NUMERACION+")" DISPONER que se libre oficio al Banco Macro a fin de que procedan a la apertura de una cuenta a la orden del Juzgado y como perteneciente al juicio de la carátula y abonen a +sexo+NombreDenunciante+ las sumas depositadas y/o a depositarse en  la misma por el plazo de tres (03) meses. "+"\n")
