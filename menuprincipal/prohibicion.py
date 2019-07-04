@@ -1,4 +1,4 @@
-print ('si')
+
 def prohibicion():
 	import creadordecarpetas
 	import time
