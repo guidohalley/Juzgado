@@ -114,6 +114,8 @@ def confirmaciones():
     datosdenunciante()
     Variablefinal=("Y CONSIDERANDO: Ante la "+Comisariadeladenuncia+","+sexo+" "+NombreDenunciante+". "+Dnidenunciante+",con domicilio en "+DomicilioDenunciante+",ha realizado denuncia por Violencia Familiar en contra de quien fuera su "+VinculoConElDenunciado+" "+sexo1+" "+NombreDenunciado+", domiciliado en "+DomicilioDenunciado+"+\n" + "Analizadas las constancias de la causa, se advierte que a Fs."+Fojares+" obra resolución del Juez de Paz de la localidad de "+Localidadremitente+", conforme lo establece el art.657 del CPCC. y F., el mismo ha dispuesto medidas de "+medidadeljuezdepaz+" y siendo que el Juez de Paz actuante, ha resuelto las medidas pertinentes teniendo en consideración la extrema urgencia que amerita la situación conforme la Ley de Violencia Familiar y en el marco del art. 657 del CPCC y F. y habiéndose remitido a este Juzgado corresponde ratificar la misma en virtud a las facultades atribuidas al suscripto por el art. 36 del CPCC y VF."+"\n")
     #print (Variablefinal)
+    #corroborar si los datos del denunciante funcionan
+    #corroborar considerando y agregar resuelvo con las medidas.
 
 
   
