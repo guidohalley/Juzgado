@@ -25,6 +25,9 @@
     <Compile Include="creadordecarpetas.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="confirmaciones.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="prohibicion.py">
       <SubType>Code</SubType>
     </Compile>
