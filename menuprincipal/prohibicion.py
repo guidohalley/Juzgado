@@ -1,3 +1,4 @@
+print ('si')
 def prohibicion():
 	import creadordecarpetas
 	import time
@@ -156,9 +157,8 @@ def prohibicion():
 			print ("Sexo del/la denunciado: Masculino")
 		print ("D.N.I del denunciando: "+ Dnidenunciado)
 		print ("Domicio del denunciado: "+ DomicilioDenunciado)
-		print ("Vinculo con el denunciado: "+VinculoConElDenunciado)
 		print ("N° de telefono del denunciado: "+NumeroDeTelefonoDenunciado)
-		print (" ")
+
 		while True:
 			preg=input ("Si la informacion es correcta, Ingrese 1, para volver a ingresar presione 0: ")
 			if preg == "1":
@@ -177,7 +177,7 @@ def prohibicion():
 	print ("* DATOS CONCRETOS DE LA DENUNCIA EN 3ERA P *")
 	print ("********************************************")
 
-	DenunciaConcreta = input("Concretamente la denunciante  manifiesta que: ")
+	
 	Variablefinal=("CONSIDERANDO: Que a fs. 2/3,obra denuncia de "+sexo+" "+NombreDenunciante  + " D.N.I" + " N°: "+Dnidenunciante+" con domicilio en " + DomicilioDenunciante + " con N° de Teléfono: "+ NumeroDeTelefonoDenunciante + " contra  quien fuera su " +VinculoConElDenunciado+" "+ sexo1 + " "+NombreDenunciado +
 				" domiciliado en " + DomicilioDenunciado+ ". Con Teléfono N°: " + NumeroDeTelefonoDenunciado+"."+"\n"+
 				"Concretamente denuncia que " + DenunciaConcreta+"\n"+"Que los hechos denunciados, encuadran dentro del marco normativo establecido por la Ley XIV No 6, del Digesto Jurídico de la Provincia de Misiones, por lo que corresponde dar una respuesta jurisdiccional efectiva a la misma. Que la norma provincial citada entiende a la violencia familiar como '.toda acción, omisión, abuso o abandono que afecte la integridad física, psíquica, moral, sexual, patrimonial y la libertad de la misma (en referencia al/la denunciante) en el ámbito familiar aunque no configure delito, sea ésta en forma permanente o temporaria.'."+"\n"+"Que en este mismo sentido, la doctrina mas autorizada en la materia, entiende que 'La violencia intrafamiliar es toda acción u omisión cometida por algún miembro de la familia en relación de poder, sin importar el espacio físico donde ocurra, que perjudique el bienestar, la integridad física, psicológica o la libertad y el derecho al pleno desarrollo de otro miembro de la familia' (Violencia de Género y Violencia Doméstica, Graciela Medina, pág. 108, Rubinzal CulzoniEditores, año 2013)."+"\n"+
@@ -188,16 +188,7 @@ def prohibicion():
                 "Compartiendo la doctrina que dice en este sentido: 'El juez a instancia de parte legitimada, se posiciona ante el hecho de violencia ocurrido en el ámbito intrafamiliar y dispone en forma urgente, atento a la gravedad de las circunstancias, las medidas adecuadas para hacer cesar la violencia y evitar su repetición. Ese es el objeto que persigue la intervención jurisdiccional, allí se agota ...' (María Josefa Méndez Costa, Francisco A. M. Ferrer, Daniel  Hugo D'Antonio; Derecho de Familia, Tomo IV, Edit. Rubinzal Culzoni, año 2008)."+"\n")#--------------------------------------------------------------------------------------------------------------------------------
 	# MENU SECTOR 4 SACAR INFO DE UN TXT---------------------------------------------------------------------------------------------
 	#--------------------------------------------------------------------------------------------------------------------------------
-	cerrarwhile=0
-	while cerrarwhile==0:
-	        conexidad = input("¿Hay conexidad?  (1=SI, 0=NO): ")
-	        if conexidad != "0" and conexidad != "1":
-	                print ("OPCION INCORRECTA, VUELVA A INGRESAR LA OPCION.")
-	        if conexidad == "1":
-	                numexpco=input("Numero de expediente de la conexidad (sin el año): ")
-	                anioexpcon=input("Año del expediente: ")
-	                numexptecon=numexpco+"/"+anioexpcon
-	                caratulacon=input("COPIE la caratula de la conexidad: ")
+	
 	                Variablefinal=("CONSIDERANDO: Que a fs. 2/3,obra denuncia de "+sexo+" "+NombreDenunciante  + " D.N.I" + " N°: "+Dnidenunciante+" con domicilio en " + DomicilioDenunciante + " con N° de Teléfono: "+ NumeroDeTelefonoDenunciante + " contra  quien fuera su " +VinculoConElDenunciado+" "+ sexo1 + " "+NombreDenunciado +
 					" domiciliado en " + DomicilioDenunciado+ ". Con Teléfono N°: " + NumeroDeTelefonoDenunciado+"."+"\n"+
 					"En igual sentido procede "+sexo1+" "+NombreDenunciado+ " denunciando a su "+VinculoConElDenunciado+ " " + sexo+ " " + NombreDenunciante + " razón por lo cual se ha formado los autos "+ "'Expte. Nro "+ numexptecon + " " + caratulacon + " s/violencia familiar'."+"\n"

@@ -34,9 +34,8 @@ if opcion=="1":
 	os.system ("cls")
 	prohibicion.prohibicion()
 if opcion=="2":
-	import exclusion
-	os.system ("cls")
-	exclusion.exclusion()
+	print ("EN PROCESO")
+
 if opcion=="3":
 	import confirmaciones
 	os.system ("cls")
