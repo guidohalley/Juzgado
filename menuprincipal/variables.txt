@@ -1,4 +1,7 @@
 ********SECTOR DENUNCIANTE 1 ***********
+
+
+
 +NdeExpediente+----------LISTO--------
 +AnioExpediente+----------LISTO--------
 "+sexo+"+"NombreDenunciante+"----------LISTO--------
@@ -9,6 +12,15 @@
 +VinculoConElDenunciado+----------LISTO--------
 +sexo+----------LISTO--------
 
+
+********SECTOR CONFIRMACION ***********
+
++Comisariadeladenuncia+
++Fojares+
++Localidadremitente+
++Juzgadodepaz+
++confirmacionplazo+
++medidadeljuezdepaz+
 
 ********SECTOR DENUNCIADO 2 ***********----------LISTO--------
 +NombreDenunciado+----------LISTO--------
