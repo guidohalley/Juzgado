@@ -49,12 +49,19 @@ def confirmaciones():
             nuevoexp=NdeExpediente+"/"+AnioExpediente
             Comisariadeladenuncia=("Ingrese la comisaria: ")
             Comisariadeladenuncia=Comisariadeladenuncia.upper()
+            Localidadremitente=("Ingrese la Localidad Remitente")
+            Localidadremitente=Localidadremitente.upper()
             Fojares=("Ingrese la Foja de la Resolucion del juzgado de Paz (ej:6/8)")
+            confirmacionplazo=("Confirmar o No confirmar el plazo de la foja anterior? 1=SI 0=NO")
+            cantidaddemeses=("ingrese la opcion para CONFIRMAR 1= 3 meses 2= 6 meses")
+            print("PROCEDEMOS CON LOS DATOS A CARGAR DEL DENUNCIADO Y DENUNCIANTE")
+          
             NombreDenunciante=input("Ingrese Nombre completo del denunciante: ")
-            NombreDenunciante=NombreDenunciante
+            NombreDenunciante=NombreDenunciante.upper()
             
 
 
 
-
 Variablefinal=("Y CONSIDERANDO: Ante la "+Comisariadeladenuncia+","+sexo+" "+NombreDenunciante+". "+Dnidenunciante+",con domicilio en "+DomicilioDenunciante+",ha realizado denuncia por Violencia Familiar en contra de quien fuera su "+VinculoConElDenunciado+" "+sexo1+" "+NombreDenunciado+", domiciliado en "+DomicilioDenunciado+"+\n" + "Analizadas las constancias de la causa, se advierte que a Fs."+Fojares+" obra resolución del Juez de Paz de la localidad de "+Localidadremitente+", conforme lo establece el art.657 del CPCC. y F., el mismo ha dispuesto medidas de "+medidadeljuezdepaz+" y siendo que el Juez de Paz actuante, ha resuelto las medidas pertinentes teniendo en consideración la extrema urgencia que amerita la situación conforme la Ley de Violencia Familiar y en el marco del art. 657 del CPCC y F. y habiéndose remitido a este Juzgado corresponde ratificar la misma en virtud a las facultades atribuidas al suscripto por el art. 36 del CPCC y VF."+"\n")
+
+print (Variablefinal)

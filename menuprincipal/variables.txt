@@ -18,7 +18,7 @@
 +Comisariadeladenuncia+
 +Fojares+
 +Localidadremitente+
-+Juzgadodepaz+
+
 +confirmacionplazo+
 +medidadeljuezdepaz+
 
