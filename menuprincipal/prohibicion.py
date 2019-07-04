@@ -1,5 +1,5 @@
 def prohibicion():
-	import CrearCarpetas
+	import creadordecarpetas
 	import time
 	import os
 	Dia = (time.strftime("%d"))
