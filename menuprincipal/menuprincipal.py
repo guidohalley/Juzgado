@@ -25,7 +25,7 @@ print("  \__\_\  \_,_| \___|   \__,_| \___| /__/ \___| \__,_|   |_|_\ \___| /__/
 print("                                                                                                             ")
 print ("1 - RESOLUCION DE PROHIBICION DE ACERCAMIENTO")
 print ("2 - RESOLUCION DE EXCLUSION DE HOGAR")
-print ("3 - RESOLUCION ACLARATORIA")
+print ("3 - RESOLUCION CONFIRMACION")
 print ("4 - RESOLUCION DESESTIMATORIA ")
 
 opcion=input("Ingrese Opcion: ")
@@ -33,3 +33,11 @@ if opcion=="1":
 	import prohibicion
 	os.system ("cls")
 	prohibicion.prohibicion()
+if opcion=="2":
+	import exclusion
+	os.system ("cls")
+	exclusion.exclusion()
+if opcion=="3":
+	import confirmaciones
+	os.system ("cls")
+	confirmaciones.confirmaciones()
