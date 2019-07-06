@@ -51,6 +51,8 @@
 			+botondepanicores1+----------LISTO--------
 			+botondepanicores2+----------LISTO--------
 +pupilarcons+----------LISTO--------
+"En Doctrina se ha sostenido '....la importancia de la fijación de una cuota de alimentos provisorios en el procedimiento de denuncia de violencia familiar significa el mantenimiento de otras medidas de protección y el aseguramiento del derecho alimentarios de los niños...El denunciado que priva de las necesidades básicas alimentarias a sus hijos está ejerciendo violencia económica hacia ellos, en convergencia con otros tipos de violencia, como la psicológica, al perturbar su pleno desarrollo personal... (Autor: Ortiz, Diego O. - Fecha: 6-sep-2016, Cita: MJ-DOC-10037-AR | MJD10037)."+"\n"+
+
 +pupilar+----------LISTO--------
 	+GuardaProvisoria+----------LISTO--------
 		+cantidadhijos+----------LISTO--------

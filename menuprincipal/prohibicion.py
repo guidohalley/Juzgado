@@ -6,7 +6,6 @@ def prohibicion():
 	Dia = (time.strftime("%d"))
 	Mes = (time.strftime("%B"))
 	anio = (time.strftime("%Y"))
-
 	if time.strftime("%B") == "May":
 		Mes="Mayo"
 	if time.strftime("%B") == "January":
@@ -36,7 +35,7 @@ def prohibicion():
 	'XIX)','XX)','XXI)','XXII)','XXIII)','XXIV)','XXV)','XXVI)','XXVII)','XXVIII)','XXIX)','XXX)']
 	contadorromano=5
 	#------------------------------------------------------------------------------------------------------------------------
-	# MENU SECTOR 1 DENUNCIANTE----------------------------------------------------------------------------------------------
+	#DENUNCIANTE----------------------------------------------------------------------------------------------
 	#------------------------------------------------------------------------------------------------------------------------
 	cerrarWhile=0
 	while cerrarWhile==0:
@@ -106,9 +105,9 @@ def prohibicion():
 				break
 		os.system ("cls")
 	#-----------------------------------------------------------------------------------------------------------------------------
-	# MENU SECTOR 2 DATOS DENUNCIADO----------------------------------------------------------------------------------------------
+	# DATOS DENUNCIADO----------------------------------------------------------------------------------------------
 	#-----------------------------------------------------------------------------------------------------------------------------
-	os.system ("cls")
+
 	cerrarWhile=0
 	while cerrarWhile==0:
 		print ("*****************************RESOLUCION DE PROHIBICION DE ACERCAMIENTO******************************")
@@ -144,7 +143,6 @@ def prohibicion():
 			sexo1 = "el Sr."
 		if SexoDenunciado == "1" :
 			sexo1 = "la Sra."
-
 		os.system ("cls")
 		print ("************************* ")
 		print ("LOS DATOS INGRESADOS SON: ")
@@ -158,7 +156,6 @@ def prohibicion():
 		print ("D.N.I del denunciando: "+ Dnidenunciado)
 		print ("Domicio del denunciado: "+ DomicilioDenunciado)
 		print ("N° de telefono del denunciado: "+NumeroDeTelefonoDenunciado)
-
 		while True:
 			preg=input ("Si la informacion es correcta, Ingrese 1, para volver a ingresar presione 0: ")
 			if preg == "1":
@@ -168,35 +165,31 @@ def prohibicion():
 				print ("OPCION INCORRECTA, VUELVA A INGRESAR LA OPCION.")
 			if preg == "0":
 				break
-		os.system ("cls")
-	#-------------------------------------------------------------------------------------------------------------------------------
-	# MENU   SECTOR 3 DENUNCIA--------------------------------------------------------------------------------------------------------
-	#-------------------------------------------------------------------------------------------------------------------------------
-	os.system ("cls")
+
+#///////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+
 	print ("********************************************")
 	print ("* DATOS CONCRETOS DE LA DENUNCIA EN 3ERA P *")
-	print ("********************************************")
-
-	
+	print ("********************************************")	
 	Variablefinal=("CONSIDERANDO: Que a fs. 2/3,obra denuncia de "+sexo+" "+NombreDenunciante  + " D.N.I" + " N°: "+Dnidenunciante+" con domicilio en " + DomicilioDenunciante + " con N° de Teléfono: "+ NumeroDeTelefonoDenunciante + " contra  quien fuera su " +VinculoConElDenunciado+" "+ sexo1 + " "+NombreDenunciado +
 				" domiciliado en " + DomicilioDenunciado+ ". Con Teléfono N°: " + NumeroDeTelefonoDenunciado+"."+"\n"+
 				"Concretamente denuncia que " + DenunciaConcreta+"\n"+"Que los hechos denunciados, encuadran dentro del marco normativo establecido por la Ley XIV No 6, del Digesto Jurídico de la Provincia de Misiones, por lo que corresponde dar una respuesta jurisdiccional efectiva a la misma. Que la norma provincial citada entiende a la violencia familiar como '.toda acción, omisión, abuso o abandono que afecte la integridad física, psíquica, moral, sexual, patrimonial y la libertad de la misma (en referencia al/la denunciante) en el ámbito familiar aunque no configure delito, sea ésta en forma permanente o temporaria.'."+"\n"+"Que en este mismo sentido, la doctrina mas autorizada en la materia, entiende que 'La violencia intrafamiliar es toda acción u omisión cometida por algún miembro de la familia en relación de poder, sin importar el espacio físico donde ocurra, que perjudique el bienestar, la integridad física, psicológica o la libertad y el derecho al pleno desarrollo de otro miembro de la familia' (Violencia de Género y Violencia Doméstica, Graciela Medina, pág. 108, Rubinzal CulzoniEditores, año 2013)."+"\n"+
 				"Que, por su parte, en el III Congreso de Derecho de Familia (El Salvador, 1992) se señaló que en las situaciones de violencia que se generan dentro de la familia se conculcan derechos fundamentales de las víctimas. 'El maltrato es cualquier acto u omisión que directa o indirecta medíante cualquiera de los miembros que conforman el grupo familiar, ya sea de una familia nuclear o extensa 1o que constituye una clara violación de los derechos humanos'."+"\n"+
 				"Analizados los hechos, conforme a los términos de la denuncia y siendo que los incidentes relatados, encuadran dentro de las prescripciones de la ley de violencia familiar, debe resolverse en forma urgente la pretensión esgrimida por el denunciante."+"\n"+"Asimismo, la normativa invocada dispone en su art. 4o las medidas que el juez debe adoptar para preservar la integridad psico-física de la víctima de violencia, debiendo remedíarse esta situación de inmedíato y acogerse lo requerido por la denunciante, haciéndose saber asimismo que lo aquí resuelto es de carácter provisorio y para obtención de medidas definitivas, deberá proceder por la vía pertinente."+"\n"+
 				"Que los incisos b), c) y d del Art. 4o de la Ley XIV No 6, establecen que, de oficio o a petición de parte el juez podrá decretar entre otras, las siguientes medidas cautelares:.b) prohibir el acceso o presencia del/la agresor/a al domicilio del damnificado/a, los lugares de trabajo o de estudio o a determinadas áreas de concurrencia o de circulación de la persona afectada, asimismo, arbitrar los medios necesarios para que el agresor/a cese con todo acto de perturbación o intimidación contra las víctimas."+"\n"+"Compartiendo la doctrina que dice en este sentido: “El juez a instancia de parte legitimada, se posiciona ante el hecho de violencia ocurrido en el ámbito intrafamiliar y dispone en forma urgente, atento a la gravedad de las circunstancias, las medidas adecuadas para hacer cesar la violencia y evitar su repetición. Ese es el objeto que persigue la intervención jurisdiccional, allí se agota .” (María Josefa Méndez Costa, Francisco A. M. Ferrer, Daniel  Hugo D'Antonio; Derecho de Familia, Tomo IV, Edit. Rubinzal Culzoni, año 2008)."+"\n"+"De igual manera se dará intervención a la Subsecretaria de la Mujer y Familia, Dirección de Genero, dependiente del Ministerio de Desarrollo Social de la Provincia de Misiones, para que arbitren los medios necesarios en protección de la víctima y su entorno familiar."+"\n" + "Que en autos se evidencia una clara posición de vulnerabilidad en la persona de la denunciante y debe tenerse presente lo sostenido por la Comisión Interamericana de Derecho Humanos en el Informe Nº 54/01 caso 12.051: Maria Da Penha Maia Fernandes vs. Brasil (Abril de 2001) en el sentido de que es una obligación de los Estados el de actuar con la debida diligencia, y que ello va mas allá de procesar y/o condenar, sino que incluye la obligación de 'prevenir estas prácticas degradantes', y considerando que la omisión del Estado de actuar implica en la práctica una 'tolerancia de todo el sistema, que no hace sino perpetuar las raíces y factores psicológicos, sociales e históricos que mantienen y alimentan la violencia contra la mujer', lo que implica que si el Poder Judicial, como uno de los poderes del Estado, debe adoptar todas las medidas que estime necesarias a fin de prevenir o evitar la materialización de un daño o riesgo, o hacer cesar los efectos perjudiciales de una conducta; en este sentido se vienen pronunciado los tribunales de nuestro país. (Excma. Cám. de Familia de 2º Nom. In re 'C., A. - DENUNCIA POR VIOLENCIA DE GENERO - RECURSO DE APELACIÓN' - Expte. Nº 6465967 - A.I Nº 109 - 22/09/2017."+"\n"+
-                "En Doctrina se ha sostenido '....la importancia de la fijación de una cuota de alimentos provisorios en el procedimiento de denuncia de violencia familiar significa el mantenimiento de otras medidas de protección y el aseguramiento del derecho alimentarios de los niños...El denunciado que priva de las necesidades básicas alimentarias a sus hijos está ejerciendo violencia económica hacia ellos, en convergencia con otros tipos de violencia, como la psicológica, al perturbar su pleno desarrollo personal... (Autor: Ortiz, Diego O. - Fecha: 6-sep-2016, Cita: MJ-DOC-10037-AR | MJD10037)."+"\n"+
                 "Compartiendo la doctrina que dice en este sentido: 'El juez a instancia de parte legitimada, se posiciona ante el hecho de violencia ocurrido en el ámbito intrafamiliar y dispone en forma urgente, atento a la gravedad de las circunstancias, las medidas adecuadas para hacer cesar la violencia y evitar su repetición. Ese es el objeto que persigue la intervención jurisdiccional, allí se agota ...' (María Josefa Méndez Costa, Francisco A. M. Ferrer, Daniel  Hugo D'Antonio; Derecho de Familia, Tomo IV, Edit. Rubinzal Culzoni, año 2008)."+"\n")#--------------------------------------------------------------------------------------------------------------------------------
-	# MENU SECTOR 4 SACAR INFO DE UN TXT---------------------------------------------------------------------------------------------
-	#--------------------------------------------------------------------------------------------------------------------------------
-	
-	                Variablefinal=("CONSIDERANDO: Que a fs. 2/3,obra denuncia de "+sexo+" "+NombreDenunciante  + " D.N.I" + " N°: "+Dnidenunciante+" con domicilio en " + DomicilioDenunciante + " con N° de Teléfono: "+ NumeroDeTelefonoDenunciante + " contra  quien fuera su " +VinculoConElDenunciado+" "+ sexo1 + " "+NombreDenunciado +
-					" domiciliado en " + DomicilioDenunciado+ ". Con Teléfono N°: " + NumeroDeTelefonoDenunciado+"."+"\n"+
-					"En igual sentido procede "+sexo1+" "+NombreDenunciado+ " denunciando a su "+VinculoConElDenunciado+ " " + sexo+ " " + NombreDenunciante + " razón por lo cual se ha formado los autos "+ "'Expte. Nro "+ numexptecon + " " + caratulacon + " s/violencia familiar'."+"\n"
-					"Concretamente denuncia que " + DenunciaConcreta+"\n"+"Que los hechos denunciados, encuadran dentro del marco normativo establecido por la Ley XIV No 6, del Digesto Jurídico de la Provincia de Misiones, por lo que corresponde dar una respuesta jurisdiccional efectiva a la misma. Que la norma provincial citada entiende a la violencia familiar como '.toda acción, omisión, abuso o abandono que afecte la integridad física, psíquica, moral, sexual, patrimonial y la libertad de la misma (en referencia al/la denunciante) en el ámbito familiar aunque no configure delito, sea ésta en forma permanente o temporaria.'."+"\n"+"Que en este mismo sentido, la doctrina mas autorizada en la materia, entiende que 'La violencia intrafamiliar es toda acción u omisión cometida por algún miembro de la familia en relación de poder, sin importar el espacio físico donde ocurra, que perjudique el bienestar, la integridad física, psicológica o la libertad y el derecho al pleno desarrollo de otro miembro de la familia' (Violencia de Género y Violencia Doméstica, Graciela Medina, pág. 108, Rubinzal CulzoniEditores, año 2013)."+"\n"+
-					"Que, por su parte, en el III Congreso de Derecho de Familia (El Salvador, 1992) se señaló que en las situaciones de violencia que se generan dentro de la familia se conculcan derechos fundamentales de las víctimas. 'El maltrato es cualquier acto u omisión que directa o indirecta medíante cualquiera de los miembros que conforman el grupo familiar, ya sea de una familia nuclear o extensa 1o que constituye una clara violación de los derechos humanos'."+"\n"+
-					"Analizados los hechos, conforme a los términos de la denuncia y siendo que los incidentes relatados, encuadran dentro de las prescripciones de la ley de violencia familiar, debe resolverse en forma urgente la pretensión esgrimida por el denunciante."+"\n"+"Asimismo, la normativa invocada dispone en su art. 4o las medidas que el juez debe adoptar para preservar la integridad psico-física de la víctima de violencia, debiendo remedíarse esta situación de inmedíato y acogerse lo requerido por la denunciante, haciéndose saber asimismo que lo aquí resuelto es de carácter provisorio y para obtención de medidas definitivas, deberá proceder por la vía pertinente."+"\n"+
-					"Que los incisos b), c) y d del Art. 4o de la Ley XIV No 6, establecen que, de oficio o a petición de parte el juez podrá decretar entre otras, las siguientes medidas cautelares:.b) prohibir el acceso o presencia del/la agresor/a al domicilio del damnificado/a, los lugares de trabajo o de estudio o a determinadas áreas de concurrencia o de circulación de la persona afectada, asimismo, arbitrar los medios necesarios para que el agresor/a cese con todo acto de perturbación o intimidación contra las víctimas."+"\n"+"Compartiendo la doctrina que dice en este sentido: “El juez a instancia de parte legitimada, se posiciona ante el hecho de violencia ocurrido en el ámbito intrafamiliar y dispone en forma urgente, atento a la gravedad de las circunstancias, las medidas adecuadas para hacer cesar la violencia y evitar su repetición. Ese es el objeto que persigue la intervención jurisdiccional, allí se agota .” (María Josefa Méndez Costa, Francisco A. M. Ferrer, Daniel  Hugo D'Antonio; Derecho de Familia, Tomo IV, Edit. Rubinzal Culzoni, año 2008)."+"\n"+"De igual manera se dará intervención a la Subsecretaria de la Mujer y Familia, Dirección de Genero, dependiente del Ministerio de Desarrollo Social de la Provincia de Misiones, para que arbitren los medios necesarios en protección de la víctima y su entorno familiar."+"\n")
-	                cerrarwhile=cerrarwhile+1
+        cerrarwhile=cerrarwhile+1
+        if conexidad == "1":
+                Variablefinal=("CONSIDERANDO: Que a fs. 2/3,obra denuncia de "+sexo+" "+NombreDenunciante  + " D.N.I" + " N°: "+Dnidenunciante+" con domicilio en " + DomicilioDenunciante + " con N° de Teléfono: "+ NumeroDeTelefonoDenunciante + " contra  quien fuera su " +VinculoConElDenunciado+" "+ sexo1 + " "+NombreDenunciado +
+				" domiciliado en " + DomicilioDenunciado+ ". Con Teléfono N°: " + NumeroDeTelefonoDenunciado+"."+"\n"+
+				"Concretamente denuncia que " + DenunciaConcreta+"\n"+"Que los hechos denunciados, encuadran dentro del marco normativo establecido por la Ley XIV No 6, del Digesto Jurídico de la Provincia de Misiones, por lo que corresponde dar una respuesta jurisdiccional efectiva a la misma. Que la norma provincial citada entiende a la violencia familiar como '.toda acción, omisión, abuso o abandono que afecte la integridad física, psíquica, moral, sexual, patrimonial y la libertad de la misma (en referencia al/la denunciante) en el ámbito familiar aunque no configure delito, sea ésta en forma permanente o temporaria.'."+"\n"+"Que en este mismo sentido, la doctrina mas autorizada en la materia, entiende que 'La violencia intrafamiliar es toda acción u omisión cometida por algún miembro de la familia en relación de poder, sin importar el espacio físico donde ocurra, que perjudique el bienestar, la integridad física, psicológica o la libertad y el derecho al pleno desarrollo de otro miembro de la familia' (Violencia de Género y Violencia Doméstica, Graciela Medina, pág. 108, Rubinzal CulzoniEditores, año 2013)."+"\n"+
+				"Que, por su parte, en el III Congreso de Derecho de Familia (El Salvador, 1992) se señaló que en las situaciones de violencia que se generan dentro de la familia se conculcan derechos fundamentales de las víctimas. 'El maltrato es cualquier acto u omisión que directa o indirecta medíante cualquiera de los miembros que conforman el grupo familiar, ya sea de una familia nuclear o extensa 1o que constituye una clara violación de los derechos humanos'."+"\n"+
+				"Analizados los hechos, conforme a los términos de la denuncia y siendo que los incidentes relatados, encuadran dentro de las prescripciones de la ley de violencia familiar, debe resolverse en forma urgente la pretensión esgrimida por el denunciante."+"\n"+"Asimismo, la normativa invocada dispone en su art. 4o las medidas que el juez debe adoptar para preservar la integridad psico-física de la víctima de violencia, debiendo remedíarse esta situación de inmedíato y acogerse lo requerido por la denunciante, haciéndose saber asimismo que lo aquí resuelto es de carácter provisorio y para obtención de medidas definitivas, deberá proceder por la vía pertinente."+"\n"+
+				""+"\n"+
+                "Que los incisos b), c) y d del Art. 4o de la Ley XIV No 6, establecen que, de oficio o a petición de parte el juez podrá decretar entre otras, las siguientes medidas cautelares:.b) prohibir el acceso o presencia del/la agresor/a al domicilio del damnificado/a, los lugares de trabajo o de estudio o a determinadas áreas de concurrencia o de circulación de la persona afectada, asimismo, arbitrar los medios necesarios para que el agresor/a cese con todo acto de perturbación o intimidación contra las víctimas."+"\n"+"Compartiendo la doctrina que dice en este sentido: “El juez a instancia de parte legitimada, se posiciona ante el hecho de violencia ocurrido en el ámbito intrafamiliar y dispone en forma urgente, atento a la gravedad de las circunstancias, las medidas adecuadas para hacer cesar la violencia y evitar su repetición. Ese es el objeto que persigue la intervención jurisdiccional, allí se agota .” (María Josefa Méndez Costa, Francisco A. M. Ferrer, Daniel  Hugo D'Antonio; Derecho de Familia, Tomo IV, Edit. Rubinzal Culzoni, año 2008)."+"\n"+"De igual manera se dará intervención a la Subsecretaria de la Mujer y Familia, Dirección de Genero, dependiente del Ministerio de Desarrollo Social de la Provincia de Misiones, para que arbitren los medios necesarios en protección de la víctima y su entorno familiar."+"\n" + "Que en autos se evidencia una clara posición de vulnerabilidad en la persona de la denunciante y debe tenerse presente lo sostenido por la Comisión Interamericana de Derecho Humanos en el Informe Nº 54/01 caso 12.051: Maria Da Penha Maia Fernandes vs. Brasil (Abril de 2001) en el sentido de que es una obligación de los Estados el de actuar con la debida diligencia, y que ello va mas allá de procesar y/o condenar, sino que incluye la obligación de 'prevenir estas prácticas degradantes', y considerando que la omisión del Estado de actuar implica en la práctica una 'tolerancia de todo el sistema, que no hace sino perpetuar las raíces y factores psicológicos, sociales e históricos que mantienen y alimentan la violencia contra la mujer', lo que implica que si el Poder Judicial, como uno de los poderes del Estado, debe adoptar todas las medidas que estime necesarias a fin de prevenir o evitar la materialización de un daño o riesgo, o hacer cesar los efectos perjudiciales de una conducta; en este sentido se vienen pronunciado los tribunales de nuestro país. (Excma. Cám. de Familia de 2º Nom. In re 'C., A. - DENUNCIA POR VIOLENCIA DE GENERO - RECURSO DE APELACIÓN' - Expte. Nº 6465967 - A.I Nº 109 - 22/09/2017."+"\n"+
+                "Compartiendo la doctrina que dice en este sentido: 'El juez a instancia de parte legitimada, se posiciona ante el hecho de violencia ocurrido en el ámbito intrafamiliar y dispone en forma urgente, atento a la gravedad de las circunstancias, las medidas adecuadas para hacer cesar la violencia y evitar su repetición. Ese es el objeto que persigue la intervención jurisdiccional, allí se agota ...' (María Josefa Méndez Costa, Francisco A. M. Ferrer, Daniel  Hugo D'Antonio; Derecho de Familia, Tomo IV, Edit. Rubinzal Culzoni, año 2008)."+"\n")#--------------------------------------------------------------------------------------------------------------------------------
+
 	        if conexidad == "0":
 	                cerrarwhile=cerrarwhile+2
 
@@ -284,6 +277,7 @@ def prohibicion():
 	            print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
 	    if BotonDepanico=="0":
 	            break
+
 	resuelvo=("RESUELVO: "+romano[0]+"Téngase por recibidas denuncia de "+sexo+" "+ NombreDenunciante+" con domicilio en "+ DomicilioDenunciante+ "\n"+
 				romano[1]+"Por iniciada acción de Violencia Familiar en los términos de la ley XIV-No 6 contra "+sexo1+" "+NombreDenunciado+ " con domicilio en " +DomicilioDenunciado+"."+"\n"+
 				romano[2]+"Ordenar "+sexo1+" "+NombreDenunciado+" la PROHIBICION DE ACCESO Y ACERCAMIENTO respecto de "+sexo+" "+NombreDenunciante+" y tambien del domicilio sito en "+DomicilioDenunciante+" y de donde estos se encuentren viviendo, como también sus lugares de trabajo y/o concurrencia o circulación, por el término de "+cm+". Hágase saber al denunciado que la prohibición de acercamiento importa suspender todo tipo de contacto físico, telefónico, de telefonía celular, de correo postal y electrónico, redes sociales y/o por cualquier medio que signifique una intromisión injustificada con relación a la denunciante; todo ello bajo apercibimiento de que ante la desobediencia a la presente medida, se procederá a su ARRESTO por incumplimiento de orden judicial, en los términos y conforme a las facultades otorgadas al suscripto por el artículo 658 ley XII - Nº 27 DJM, quedando a disposición del Juez de Instrucción que por turno corresponda y/o de imponerle multa en los  términos del art. 5 de la Ley XIV Nº 6 DJM."+"\n"+
@@ -291,14 +285,14 @@ def prohibicion():
 				romano[4]+"Se hace saber a la denunciada que podrá comparecer ante este juzgado y en estos obrados a fin de ejercer su derecho de defensa, con patrocinioletrado de abogado particular y/o Defensor Oficial."+"\n"+
 				romano[5]+"Disponer que las partes realicen terapia psicológica por medio de alguna institución pública o privada, por el lapso que dure la medida ordenada, debiéndose acreditar en la causa la misma cada tres meses, y acompañar un informe general y pormenorizado de las sesiones llevadas a cabo, con diez días de anticipación al vencimiento de la medida, bajo apercibimiento de ley."+"\n")
 	Variablefinal=Variablefinal+resuelvo
-	if conexidad == "1":
+	
+    if conexidad == "1":
 		contadorromano=contadorromano+1
 		resuconexidad=(romano[contadorromano]+"En virtud de lo expuesto ut-supra, y atendiendo a la existencia de igualdad de sujeto y objeto, considero pertinente disponer la acumulación de los autos Expte. Nro. " +numexptecon+" "+caratulacon+"."+"\n")
 		Variablefinal=Variablefinal+resuconexidad
-	#------------------------------------------------------------------------------------------------------------------------------------------
-	#------------------------------------------------------------------------------------------------------------------------------------------
-	os.system ("cls")
-	while True:
+	
+    os.system ("cls")
+    while True:
 		fiscalresu = input("¿Solicita intervencion del fiscal de instruccion Penal ? (1=SI, 0=NO): ")
 		if fiscalresu == "1":
 		    contadorromano=contadorromano+1
@@ -309,8 +303,9 @@ def prohibicion():
 			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
 		if fiscalresu == "0":
 			break
-	os.system ("cls")
-	while True: 
+            
+    os.system ("cls")
+    while True: 
 		resudefensoria = input("¿Solicita intervencion de defensoria ? (1=SI, 0=NO): ")
 		if resudefensoria == "1":
 			contadorromano=contadorromano+1
@@ -321,8 +316,9 @@ def prohibicion():
 			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
 		if resudefensoria == "0":
 			break
+
 	os.system ("cls")
-	while True: 
+    while True: 
 		subscreresu = input("¿Solicita intervencion de Subscretearia de la mujer y familia ? (1=SI, 0=NO): ")
 		if subscreresu == "1":
 			contadorromano=contadorromano+1
@@ -352,8 +348,9 @@ def prohibicion():
 		BotonDepanicoresu1=(romano[contadorromano]+"Atento a la gravedad de los hechos denunciados, corresponder proveer a "+sexo+" "+NombreDenunciante+ " D.N.I. Nº " +Dnidenunciante+ "realmente en "+DomicilioDenunciante+" de un Botón de Pánico, el cual tendrá una vigencia de "+cm+", será efectivizado en este Juzgado y comunicado a la Secretaria Técnica en Informática y de Superintendencia del S.T.J, una vez que la denunciante manifieste su número de celular, modelo del mismo y sistema operativo, debiendo presentarse ésta ante los estrados del presente Juzgado por ante el actuario, en el término de 48 hs. de notificada la presente, bajo apercibimiento de Ley, notifíquese personalmente o por cédula estando a cargo de la defensoría oficial patrocinante la confección de la correspondiente cédula y su diligenciamiento. Cumplido, líbrese el correspondiente Oficio a la Secretaria Técnica en Informática y de Superintendencia del S.T.J a los fines dispuestos ut-supra."+"\n")
 		BotonDepanicoresu2=(romano[contadorromano]+"Efectuada la instalación del botón de pánico a la denunciante, líbrese oficios por medio del SIGED a la Dirección de Violencia y Género de la Policía de Misiones, en coordinación con el Centro Integral de Operaciones (911); a la Subsecretaria de Relaciones con la comunidad -Ministerio de Gobierno- Línea 137 Programa las Víctimas contra las Violencias y Subsecretaria de Seguridad y Justicia -Ministerio de Gobierno- a fin de que reporten a sus respectivas jurisdicciones."+"\n")
 		Variablefinal=Variablefinal+BotonDepanicoresu1+BotonDepanicoresu2
+	
 	os.system ("cls")
-	while True: 
+    while True: 
 		informedeinteraccionfamiliar = input("¿Solicita interaccion familiar (Tevez) ? (1=SI, 0=NO): ")
 		if informedeinteraccionfamiliar == "1":
 			contadorromano=contadorromano+1
@@ -365,6 +362,7 @@ def prohibicion():
 		if informedeinteraccionfamiliar == "0":
 			break
 	os.system ("cls")
+
 	while True: 
 		cuerpomedico = input("¿Solicita entrevista psicológica por el cuerpo medico forense ? (1=SI, 0=NO): ")
 		if cuerpomedico == "1":
@@ -377,7 +375,8 @@ def prohibicion():
 		if cuerpomedico == "0":
 			break
 	os.system ("cls")
-	while True: 
+	
+    while True: 
 		Primeraaudiencia = input("¿Solicita primera audiencia?  (1=SI, 0=NO): ")
 		if Primeraaudiencia!="0" and Primeraaudiencia!="1":
 			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
@@ -541,7 +540,6 @@ def prohibicion():
 	print ("********************************************")
 	print ("****** ARCHIVO GENERADO EXITOSAMENTE *******")
 	print ("********************************************")
-
 
 
 prohibicion()

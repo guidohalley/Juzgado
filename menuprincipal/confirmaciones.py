@@ -1,4 +1,4 @@
-import creadordecarpetas
+#import creadordecarpetas
 import time
 import os
 def medconexidad():
