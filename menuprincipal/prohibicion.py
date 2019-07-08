@@ -241,6 +241,7 @@ def prohibicion():
 					cerrarWhile=cerrarWhile+1
 					break
 	os.system ("cls")
+
 	while True:
 		if pupilar=="1":
 			alimentos=input("¿Solicita de alimentos?(1=SI, 0=NO): ")
@@ -285,55 +286,48 @@ def prohibicion():
 				romano[4]+"Se hace saber a la denunciada que podrá comparecer ante este juzgado y en estos obrados a fin de ejercer su derecho de defensa, con patrocinioletrado de abogado particular y/o Defensor Oficial."+"\n"+
 				romano[5]+"Disponer que las partes realicen terapia psicológica por medio de alguna institución pública o privada, por el lapso que dure la medida ordenada, debiéndose acreditar en la causa la misma cada tres meses, y acompañar un informe general y pormenorizado de las sesiones llevadas a cabo, con diez días de anticipación al vencimiento de la medida, bajo apercibimiento de ley."+"\n")
 	Variablefinal=Variablefinal+resuelvo
-	
-    if conexidad == "1":
+	if conexidad == "1":
 		contadorromano=contadorromano+1
 		resuconexidad=(romano[contadorromano]+"En virtud de lo expuesto ut-supra, y atendiendo a la existencia de igualdad de sujeto y objeto, considero pertinente disponer la acumulación de los autos Expte. Nro. " +numexptecon+" "+caratulacon+"."+"\n")
 		Variablefinal=Variablefinal+resuconexidad
-	
-    os.system ("cls")
-    while True:
-		fiscalresu = input("¿Solicita intervencion del fiscal de instruccion Penal ? (1=SI, 0=NO): ")
-		if fiscalresu == "1":
+        while True:
+            fiscalresu = input("¿Solicita intervencion del fiscal de instruccion Penal ? (1=SI, 0=NO): ")
+            if fiscalresu == "1":
+                contadorromano=contadorromano+1
+                fiscalresu=(romano[contadorromano]+"Líbrese Oficio al Fiscal de Instrucción Penal en turno, a fin que se notifique de todo lo actuado en este fuero, adjuntando copia simple de la denuncia obrante a fs. 1/2 y determine si la conducta desplegada por "+sexo1+" "+NombreDenunciado+" D.N.I. Nº"+Dnidenunciado+" "+DomicilioDenunciado+", Con Telefono Nº "+NumeroDeTelefonoDenunciado+", constituye delito de lesiones calificadas (conf. al Código Penal Argentino) y en su caso si corresponde instar la acción penal conforme a sus facultades y competencia."+"\n")
+                Variablefinal=Variablefinal+fiscalresu
+                break
+            if fiscalresu!="0" and fiscalresu!="1":
+			    print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
+            if fiscalresu == "0":
+			    break
+        while True: 
+		    resudefensoria = input("¿Solicita intervencion de defensoria ? (1=SI, 0=NO): ")
+		    if resudefensoria == "1":
+			    contadorromano=contadorromano+1
+			    resudefensoria =(romano[contadorromano]+"Girar las presentes a la Defensoría Oficial de Violencia Familiar y/o que corresponda, a fin de que citen a la denunciante para  asumir el patrocinio letrado y/o manifieste si opta por patrocinio particular estando a su cargo la notificación a " + sexo +" "+ NombreDenunciante + "donde este se cuentre; haciéndose saber que deberán diligenciarse en forma urgente las medidas judiciales ordenadas en las  causas de violencia familiar e informar al suscripto, el resultado de dichas diligencias, bajo la exclusiva responsabilidad de la Defensoría Oficial interviniente."+"\n")
+			    Variablefinal = Variablefinal+resudefensoria
+			    break
+		    if resudefensoria!="0" and resudefensoria!="1":
+			    print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
+		    if resudefensoria == "0":
+			    break
+        while True: 
+		    subscreresu = input("¿Solicita intervencion de Subscretearia de la mujer y familia ? (1=SI, 0=NO): ")
+		    if subscreresu == "1":
+			    contadorromano=contadorromano+1
+			    subscreresu=(romano[contadorromano]+"Dar intervención a la Subsecretaría de la mujer y la Familia, Dirección de Género, dependiente del Ministerio de Desarrollo Social de la Provincia, a fin de que tomen razón de la presente  ante  la medida y en el marco de su competencia coordinen los Servicios Públicos y privados para contener, evitar o en su caso superar las causas de maltrato, abusos y todo tipo de violencia dentro de la familia de la denunciante, debiendo comunicarse a este Juzgado las medidas y estrategias adoptadas en el término de veinte días de recepcionado el presente, a tal fin líbrese oficio pertinente, quedando a cargo del patrocinante, la confección y diligenciamiento de dicho oficio."+"\n")
+			    Variablefinal=Variablefinal+subscreresu
+			    break
+		    if subscreresu!="0" and subscreresu!="1":
+			    print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
+		    if subscreresu == "0":
+			    break
+        if pupilar == "1":
 		    contadorromano=contadorromano+1
-		    fiscalresu=(romano[contadorromano]+"Líbrese Oficio al Fiscal de Instrucción Penal en turno, a fin que se notifique de todo lo actuado en este fuero, adjuntando copia simple de la denuncia obrante a fs. 1/2 y determine si la conducta desplegada por "+sexo1+" "+NombreDenunciado+" D.N.I. Nº"+Dnidenunciado+" "+DomicilioDenunciado+", Con Telefono Nº "+NumeroDeTelefonoDenunciado+", constituye delito de lesiones calificadas (conf. al Código Penal Argentino) y en su caso si corresponde instar la acción penal conforme a sus facultades y competencia."+"\n")
-		    Variablefinal=Variablefinal+fiscalresu
-		    break
-		if fiscalresu!="0" and fiscalresu!="1":
-			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-		if fiscalresu == "0":
-			break
-            
-    os.system ("cls")
-    while True: 
-		resudefensoria = input("¿Solicita intervencion de defensoria ? (1=SI, 0=NO): ")
-		if resudefensoria == "1":
-			contadorromano=contadorromano+1
-			resudefensoria =(romano[contadorromano]+"Girar las presentes a la Defensoría Oficial de Violencia Familiar y/o que corresponda, a fin de que citen a la denunciante para  asumir el patrocinio letrado y/o manifieste si opta por patrocinio particular estando a su cargo la notificación a " + sexo +" "+ NombreDenunciante + "donde este se cuentre; haciéndose saber que deberán diligenciarse en forma urgente las medidas judiciales ordenadas en las  causas de violencia familiar e informar al suscripto, el resultado de dichas diligencias, bajo la exclusiva responsabilidad de la Defensoría Oficial interviniente."+"\n")
-			Variablefinal = Variablefinal+resudefensoria
-			break
-		if resudefensoria!="0" and resudefensoria!="1":
-			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-		if resudefensoria == "0":
-			break
+		    pupilar=(romano[contadorromano]+"Dese intervención al representante del Ministerio Público Pupilar, a fin que la Defensoría Oficial que por turno corresponda, asuma la representación complementaria de los niños, niñas y adolescentes de autos, en resguardo de sus superiores intereses y dictamine respecto de las medidas adoptadas."+"\n")
+		    Variablefinal=Variablefinal+pupilar
 
-	os.system ("cls")
-    while True: 
-		subscreresu = input("¿Solicita intervencion de Subscretearia de la mujer y familia ? (1=SI, 0=NO): ")
-		if subscreresu == "1":
-			contadorromano=contadorromano+1
-			subscreresu=(romano[contadorromano]+"Dar intervención a la Subsecretaría de la mujer y la Familia, Dirección de Género, dependiente del Ministerio de Desarrollo Social de la Provincia, a fin de que tomen razón de la presente  ante  la medida y en el marco de su competencia coordinen los Servicios Públicos y privados para contener, evitar o en su caso superar las causas de maltrato, abusos y todo tipo de violencia dentro de la familia de la denunciante, debiendo comunicarse a este Juzgado las medidas y estrategias adoptadas en el término de veinte días de recepcionado el presente, a tal fin líbrese oficio pertinente, quedando a cargo del patrocinante, la confección y diligenciamiento de dicho oficio."+"\n")
-			Variablefinal=Variablefinal+subscreresu
-			break
-		if subscreresu!="0" and subscreresu!="1":
-			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-		if subscreresu == "0":
-			break
-
-	if pupilar == "1":
-		contadorromano=contadorromano+1
-		pupilar=(romano[contadorromano]+"Dese intervención al representante del Ministerio Público Pupilar, a fin que la Defensoría Oficial que por turno corresponda, asuma la representación complementaria de los niños, niñas y adolescentes de autos, en resguardo de sus superiores intereses y dictamine respecto de las medidas adoptadas."+"\n")
-		Variablefinal=Variablefinal+pupilar
 
 	if alimentos=="1":
 		contadorromano=contadorromano+1
@@ -350,20 +344,20 @@ def prohibicion():
 		Variablefinal=Variablefinal+BotonDepanicoresu1+BotonDepanicoresu2
 	
 	os.system ("cls")
-    while True: 
-		informedeinteraccionfamiliar = input("¿Solicita interaccion familiar (Tevez) ? (1=SI, 0=NO): ")
-		if informedeinteraccionfamiliar == "1":
-			contadorromano=contadorromano+1
-			informedeinteraccionfamiliar=(romano[contadorromano]+"Procedase a la realización de un informe de interacción familiar en el domicilio "+DomicilioDenunciante+" el que será llevado a cabo y elevado a esta Judicatura por el equipo interdisciplinario de este Juzgado de Violencia Familiar Nº 1 a cargo del Licenciado Alfredo Tevez"+"\n")
-			Variablefinal=Variablefinal+informedeinteraccionfamiliar
-			break
-		if informedeinteraccionfamiliar!="0" and informedeinteraccionfamiliar!="1":
-			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-		if informedeinteraccionfamiliar == "0":
-			break
-	os.system ("cls")
+        while True: 
+		    informedeinteraccionfamiliar = input("¿Solicita interaccion familiar (Tevez) ? (1=SI, 0=NO): ")
+		    if informedeinteraccionfamiliar == "1":
+			    contadorromano=contadorromano+1
+			    informedeinteraccionfamiliar=(romano[contadorromano]+"Procedase a la realización de un informe de interacción familiar en el domicilio "+DomicilioDenunciante+" el que será llevado a cabo y elevado a esta Judicatura por el equipo interdisciplinario de este Juzgado de Violencia Familiar Nº 1 a cargo del Licenciado Alfredo Tevez"+"\n")
+			    Variablefinal=Variablefinal+informedeinteraccionfamiliar
+			    break
+		    if informedeinteraccionfamiliar!="0" and informedeinteraccionfamiliar!="1":
+			    print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
+		    if informedeinteraccionfamiliar == "0":
+			    break
+	            os.system ("cls")
 
-	while True: 
+	    while True: 
 		cuerpomedico = input("¿Solicita entrevista psicológica por el cuerpo medico forense ? (1=SI, 0=NO): ")
 		if cuerpomedico == "1":
 			contadorromano=contadorromano+1
@@ -374,29 +368,28 @@ def prohibicion():
 			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
 		if cuerpomedico == "0":
 			break
+
+        while True: 
+		    Primeraaudiencia = input("¿Solicita primera audiencia?  (1=SI, 0=NO): ")
+		    if Primeraaudiencia!="0" and Primeraaudiencia!="1":
+			    print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
+		    if Primeraaudiencia == "1":
+			    Cantidadaudiencia = input("Cantidad de personas que se toma audiencia: ")
+			    totalaudiencia=""
+			    c=0
+			    Cantidadaudiencia=int(Cantidadaudiencia)
+			    while c<Cantidadaudiencia:
+				    c=c+1
+				    ca=input("Nombre de la persona "+str(c)+"persona a tomar audiencia: ")
+				    totalaudiencia=ca+", "+ totalaudiencia
+			    contadorromano=contadorromano+1
+			    primeraudienci=(romano[contadorromano]+"Señalese primera audiencia en los términos del art. 5 de la Ley XIV Nº 6  a fin de que comparezca "+totalaudiencia+"a fin de que informe sobre su situacion actual Notifiquese personalmente o por cédula.-"+"\n")
+			    Variablefinal=Variablefinal+primeraudienci
+			    break
+		    if Primeraaudiencia == "0":
+			    break
 	os.system ("cls")
-	
-    while True: 
-		Primeraaudiencia = input("¿Solicita primera audiencia?  (1=SI, 0=NO): ")
-		if Primeraaudiencia!="0" and Primeraaudiencia!="1":
-			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-		if Primeraaudiencia == "1":
-			Cantidadaudiencia = input("Cantidad de personas que se toma audiencia: ")
-			totalaudiencia=""
-			c=0
-			Cantidadaudiencia=int(Cantidadaudiencia)
-			while c<Cantidadaudiencia:
-				c=c+1
-				ca=input("Nombre de la persona "+str(c)+"persona a tomar audiencia: ")
-				totalaudiencia=ca+", "+ totalaudiencia
-			contadorromano=contadorromano+1
-			primeraudienci=(romano[contadorromano]+"Señalese primera audiencia en los términos del art. 5 de la Ley XIV Nº 6  a fin de que comparezca "+totalaudiencia+"a fin de que informe sobre su situacion actual Notifiquese personalmente o por cédula.-"+"\n")
-			Variablefinal=Variablefinal+primeraudienci
-			break
-		if Primeraaudiencia == "0":
-			break
-	os.system ("cls")
-	while True:
+	    while True:
 		anmac = input ("¿Hay armas (anmac)?(1=SI, 0=NO): ")
 		if anmac == "1":
 			foja = input ("¿Que foja se denuncia?: ")
@@ -408,9 +401,8 @@ def prohibicion():
 			break
 		if anmac != "0" and anmac != "1":
 			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-
-	os.system ("cls")
-	while True:
+            os.system ("cls")
+	    while True:
 		drogadiccion = input ("¿Necesita de  intervención a la Subsecretaría de Prevención de Adicciones ?(1=SI, 0=NO): ")
 		if drogadiccion == "1":
 			drogadictoo=input("Cantidad de personas que necesitan intervención a la Subsecretaría de Prevención de Adicciones: ")
@@ -429,15 +421,15 @@ def prohibicion():
 			break
 		if drogadiccion != "0" and drogadiccion != "1":
 			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-	os.system ("cls")
-	while True:
-		reingro=input("¿Hay restitucion de bienes?(1=SI, 0=NO): ")
-		if reingro=="0":
-			break
-		if reingro!="0" and reingro!="1":
-			print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-		if reingro=="1":
-			reintegro=input("¿Quien denuncia los vienes?(1=denunciante, 2=denunciado): ")
+		while True:
+		    reingro=input("¿Hay restitucion de bienes?(1=SI, 0=NO): ")
+		    if reingro=="0":
+                break
+            
+            if reingro!="0" and reingro!="1":
+			    print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
+		    if reingro=="1":
+			    reintegro=input("¿Quien denuncia los vienes?(1=denunciante, 2=denunciado): ")
 			if reintegro=="1":
 				contadorromano=contadorromano+1
 				reingrobienes=(romano[contadorromano]+" En cuanto a la restitución de bienes considero que en razón de lo ordenado en la presente y a los efectos de evitar que se produzcan nuevas situaciones de violencia, deberá " +sexo+" "+NombreDenunciante+" denunciar bienes y designar una persona, los datos de la misma (nombre y apellido, D.N.I, etc) autorizada por la misma a participar en el acto de retiro de bienes, la que quedará en calidad de depositario judicial de las pertenencias que en su caso se les restituirán debiendo acreditar la titularidad de los mismos."+"\n")
