@@ -2,6 +2,16 @@ import time
 import os
 
 print ('HOLA MILI')
+print ('HOLA MILI')
+print ('HOLA MILI')
+print ('HOLA MILI')
+print ('HOLA MILI')
+print ('HOLA MILI')
+print ('HOLA MILI')
+print ('HOLA MILI')
+print ('HOLA MILI')
+time.sleep(5)
+
 print(" _   _  _         _                     _         ______                    _  _  _              ")
 print("| | | |(_)       | |                   (_)        |  ___|                  (_)| |(_)             ")
 print("| | | | _   ___  | |  ___  _ __    ___  _   __ _  | |_     __ _  _ __ ___   _ | | _   __ _  _ __ ")
@@ -30,15 +40,15 @@ print ("2 - RESOLUCION DE EXCLUSION DE HOGAR")
 print ("3 - RESOLUCION CONFIRMACION")
 print ("4 - RESOLUCION DESESTIMATORIA ")
 
-opcion=input("Ingrese Opcion: ")
-if opcion=="1":
-	import prohibicion
-	os.system ("cls")
-	prohibicion.prohibicion()
-if opcion=="2":
-	print ("EN PROCESO")
+#opcion=input("Ingrese Opcion: ")
+#if opcion=="1":
+#	import prohibicion
+#	os.system ("cls")
+#	prohibicion.prohibicion()
+#if opcion=="2":
+#	print ("EN PROCESO")
 
-if opcion=="3":
-	import confirmaciones
-	os.system ("cls")
-	confirmaciones.confirmaciones()
+#if opcion=="3":
+#	import confirmaciones
+#	os.system ("cls")
+#	confirmaciones.confirmaciones()

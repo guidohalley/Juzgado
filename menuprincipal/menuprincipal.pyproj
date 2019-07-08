@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>78af9040-6046-4866-863d-160e95957547</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>confirmaciones.py</StartupFile>
+    <StartupFile>menuprincipal.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
