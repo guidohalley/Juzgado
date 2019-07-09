@@ -5,7 +5,6 @@ def prohibicion():
 	Dia = (time.strftime("%d"))
 	Mes = (time.strftime("%B"))
 	anio = (time.strftime("%Y"))
-
 	if time.strftime("%B") == "May":
 		Mes="Mayo"
 	if time.strftime("%B") == "January":
@@ -41,8 +40,7 @@ def prohibicion():
 	while cerrarWhile==0:
 		print ("*****************************RESOLUCION DE PROHIBICION DE ACERCAMIENTO******************************")
 		print ("*****************************************DATOS DEL DENUNCIANTE**************************************")
-		print ("****************************************************************************************************")
-
+		
 		NdeExpediente=input("Numero de expediente (sin el año): ")
 		AnioExpediente=input("Año del expediente: ")
 		nuevoexp=NdeExpediente+"/"+AnioExpediente
@@ -79,9 +77,8 @@ def prohibicion():
 		if SexoDenunciante == "1" :
 			sexo = "la Sra."
 		os.system ("cls")
-		print ("************************* ")
-		print ("LOS DATOS INGRESADOS SON: ")
-		print ("************************* ")
+		print ("***************************************************************************")
+		print ("*************************LOS DATOS INGRESADOS SON:************************* ")
 		print (" ")
 		print ("Numero de expediente : "+NdeExpediente+"/"+AnioExpediente)
 		print ("Nombre completo del denunciante: "+NombreDenunciante)
@@ -112,9 +109,7 @@ def prohibicion():
 	while cerrarWhile==0:
 		print ("*****************************RESOLUCION DE PROHIBICION DE ACERCAMIENTO******************************")
 		print ("****************************************DATOS DEL DENUNCIADO****************************************")
-		print ("****************************************************************************************************")
-		print ("\n")
-
+        print ("\n")
 		NombreDenunciado=input("Nombre completo del denunciado: ")
 		NombreDenunciado=NombreDenunciado.upper()
 		while True:
@@ -150,9 +145,9 @@ def prohibicion():
 		print ("************************* ")
 		print (" ")
 		print ("Nombre completo del denunciado: "+NombreDenunciado)
-		if SexoDenunciante == "1":
+		if SexoDenunciado == "1":
 			print ("Sexo del/la denunciado: Femenino")
-		if SexoDenunciante == "0":
+		if SexoDenunciado == "0":
 			print ("Sexo del/la denunciado: Masculino")
 		print ("D.N.I del denunciando: "+ Dnidenunciado)
 		print ("Domicio del denunciado: "+ DomicilioDenunciado)
