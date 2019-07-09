@@ -1,15 +1,15 @@
 import time
 import os
 
-print ('HOLA MILI')
-print ('HOLA MILI')
-print ('HOLA MILI')
-print ('HOLA MILI')
-print ('HOLA MILI')
-print ('HOLA MILI')
-print ('HOLA MILI')
-print ('HOLA MILI')
-print ('HOLA MILI')
+print ('XD LOL')
+print ('XD LOL')
+print ('XD LOL')
+print ('XD LOL')
+print ('XD LOL')
+print ('XD LOL')
+print ('XD LOL')
+print ('XD LOL')
+print ('XD LOL')
 time.sleep(5)
 
 print(" _   _  _         _                     _         ______                    _  _  _              ")
