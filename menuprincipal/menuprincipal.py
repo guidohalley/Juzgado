@@ -1,17 +1,6 @@
 import time
 import os
 
-print ('XD LOL')
-print ('XD LOL')
-print ('XD LOL')
-print ('XD LOL')
-print ('XD LOL')
-print ('XD LOL')
-print ('XD LOL')
-print ('XD LOL')
-print ('XD LOL')
-time.sleep(5)
-
 print(" _   _  _         _                     _         ______                    _  _  _              ")
 print("| | | |(_)       | |                   (_)        |  ___|                  (_)| |(_)             ")
 print("| | | | _   ___  | |  ___  _ __    ___  _   __ _  | |_     __ _  _ __ ___   _ | | _   __ _  _ __ ")
