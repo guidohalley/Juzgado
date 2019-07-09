@@ -46,6 +46,7 @@ def exclusion():
         NdeExpediente=input("Numero de expediente (sin el año): ")
         AnioExpediente=input("Año del expediente: ")
         nuevoexp=NdeExpediente+"/"+AnioExpediente
+        fs=input("Ingrese la Foja de la denuncia (Ej> 2/3)")
         NombreDenunciante=input("Nombre completo del denunciante: ")
         NombreDenunciante=NombreDenunciante.upper()
 
@@ -176,7 +177,8 @@ def exclusion():
         print ("|///////////////////////////////////////////////////////////////|")
 
     DenunciaConcreta = input("Concretamente la denunciante  manifiesta que: ")
-    Variablefinal=("Concretamente denuncia que " +DenunciaConcreta+"\n"+
+    Variablefinal=("CONSIDERANDO: Que a fs."+fs+" obra denuncia de "+sexo+" "+NombreDenunciante  + " D.N.I" + " N°: "+Dnidenunciante+" con domicilio en " + DomicilioDenunciante + " con N° de Teléfono: "+ NumeroDeTelefonoDenunciante + " contra  quien fuera su " +VinculoConElDenunciado+" "+ sexo1 + " "+NombreDenunciado+""+NumeroDeTelefonoDenunciado+"\n"
+                   "Concretamente denuncia que " +DenunciaConcreta+"\n"+
                     "Que la norma provincial citada entiende a la violencia familiar como '...toda acción, omisión, abuso o abandono que afecte la integridad física, psíquica, moral, sexual, patrimonial y la libertad de la misma (en referencia al/la denunciante) en el ámbito familiar aunque no configure delito, sea ésta en forma permanente o temporaria...'"+"\n"
                     "Que, tal como se señaló en el III Congreso de Derecho de Familia (El Salvador, 1992) en las situaciones de violencia que se generan dentro de la familia se conculcan derechos fundamentales de las víctimas... 'El maltrato es cualquier acto u omisión que directa o indirecta mediante cualquiera de los miembros que conforman el grupo familiar, ya sea de una familia nuclear o extensa que constituye una clara violación de los derechos humanos'."+"\n"
                     "La mentada ley Provincial de Violencia Familiar XIV, N° 6, dispone en su art. 4º las medidas que el juez puede adoptar para preservar la integridad pisco-física de la víctima y de su grupo familiar, debiendo remediarse esta situación de inmediato en salvaguarda de la misma, tornándose impostergable adoptar medidas contra la violencia familiar manifestada."+"\n"
@@ -240,7 +242,7 @@ def exclusion():
 
     resuelvo=("Por ello, Ley Provincial XIV, Nº 6, las facultades atribuidas al suscripto por el art 4 de la misma, normas procesales y ccs.:"+"\n"
         "RESUELVO: "+romano[0]+"Téngase por recibidas denuncia de "+sexo+""+NombreDenunciante+", D.N.I. Nº "+Dnidenunciante+", domiciliada realmente en "+DomicilioDenunciante+"\n"
-        +romano[1]+"Por iniciada acción de Violencia Familiar en los términos de la ley XIV-Nº 6 contra "+sexo1+" "+NombreDenunciado+" , D.N.I. Nº +Dnidenunciado+, domiciliado actualmente "+DomicilioDenunciante+"\n"
+        +romano[1]+"Por iniciada acción de Violencia Familiar en los términos de la ley XIV-Nº 6 contra "+sexo1+" "+NombreDenunciado+" , D.N.I. Nº "+Dnidenunciado+", domiciliado actualmente "+DomicilioDenunciante+"\n"
         +romano[2]+"Procédase a Excluir del Hogar "+sexo1+" "+NombreDenunciado+", D.N.I. Nº"+Dnidenunciado+" con sus pertenencias personales, el que se asienta en el domicilio sito en "+DomicilioDenunciante+", por el término de "+cm+" y  en este mismo acto, ordenar la Prohibición de Acceso y Acercamiento "+sexo1+" "+NombreDenunciado+" al domicilio "+DomicilioDenunciante+", como también hacia "+sexo+" "+NombreDenunciante+" y a todos los ámbitos donde desarrolle sus actividades, tales como: lugares de trabajo, circulación, lugares donde concurra por razones sociales, deportivas, religiosas, de salud, por esparcimiento, etc., prohibición que se extiende además a contactarla por telefonía fija o móvil, redes sociales, correo electrónico, medios postales, etc., y/o por cualquier medio signifique intromisión injustificada con relación a la denunciante, todo ello por el mismo término al de la exclusión dispuesta, todo ello bajo apercibimiento de que ante la desobediencia a la presente medida, se procederá a su ARRESTO por incumplimiento de orden judicial, en los términos y conforme a las facultades otorgadas al suscripto por el artículo 658 ley XII - Nº 27 DJM, quedando a disposición del Juez de Instrucción que por turno corresponda y/o de imponerle multa en los  términos del art. 5 de la Ley XIV Nº 6 DJM."+"\n"
         +romano[3]+"Líbrese oficio a la Dirección de Asuntos de Familia y Género, Dirección General de Seguridad de la Policía de la Provincia de Misiones, a fin de que arbitren los medios necesarios para que una Comisión Policial a cargo de un Oficial de Policía que presente idoneidad para el diligenciamiento de la medida, teniendo en cuenta la situación particular de cada caso (si hay menores de edad, discapacitados, personas ancianas, si algunos de los involucrados revisten condición de agentes de seguridad de cualquier fuerza, y en su caso si en el lugar pueden haber armas de cualquier naturaleza) para que se constituyan en el término de 24 horas, en el domicilio sito en "+DomicilioDenunciante+" CUMPLIMENTEN CON LA EXCLUSIÓN DEL HOGAR "+sexo1+""+NombreDenunciado+" "+reintegrodenunciante+" ""Y NOTIFIQUEN LA PROHIBICIÓN DE ACCESO Y ACERCAMIENTO del mismo  a "+sexo+" "+NombreDenunciante+", su domicilio, lugares de trabajo y concurrencia por el termino de "+cm+", debiendo en dicho acto la comisión asignada, proceder resguardando la integridad física de la denunciante, del denunciado y todo el grupo familiar, teniéndose presente que la problemática familiar debe ser abordada con un elevado criterio de protección y respeto al núcleo familiar. Se le hace saber al denunciado que ante la desobediencia a la presente medida, se procederá a su ARRESTO por incumplimiento de orden judicial, en los términos y conforme a las facultades otorgadas al suscripto por el artículo 658 ley XII - No 27 DJM, quedando a disposición del Juez de Instrucción que por turno corresponda y/o de imponerle multa en los términos del art. 5 de la Ley XIV No 6 DJM. Se hace saber que la comisión policial se encuentra facultada en caso de ser estrictamente necesario allanar domicilio y utilizar los servicios de un cerrajero y toda otra medida prudente al solo efecto del cumplimiento de la orden judicial, debiéndose comunicar al suscripto en el plazo de 48 horas, la comisión asignada dando detalle pormenorizado de los agentes intervinientes y el resultado de la diligencia. Asimismo poner en conocimiento del denunciado excluido, que en este mismo acto puede retirar sus ropas, documentos personales, elementos de higiene y/o herramientas de trabajo si las tuviera, debiendo en dicho acto la comisión policial designada al efecto, realizar inventario de todas las pertenencias extraídas del hogar por parte del denunciado. Queda autorizado a intervenir en el diligenciamiento al Defensor Oficial y/o quien este designe con facultades de práctica. Debiendo informar a la Defensoría Oficial o abogado patrocinante el momento del diligenciamiento de la medida. Queda estrictamente prohibida la presencia de personas ajenas al excluido y a la Comisión Policial interviniente en el acto de exclusión."+"\n"
         +romano[4]+"Se hace saber al denunciado que podrá comparecer ante este juzgado y en estos obrados a fin de ejercer su derecho de defensa, con patrocinio letrado de abogado particular y/o Defensor Oficial. "+"\n")
@@ -480,7 +482,7 @@ def exclusion():
                 c=c+1
                 ca=input("Nombre de la persona " + str(c) + " : ")
                 nombredroga=ca+", "+ nombredroga
-            drogadiccionresu=(romano[contadorromano]+"Dese intervención a la Subsecretaría de Prevención de Adicciones y Control de Drogas (tel. 4447797) dependiente del Ministerio de Salud, a fin de que con carácter de valiosa colaboración, a efectos de que tomen intervención en autos respecto a la situación de "+nombredroga+" y en el ámbito de su competencia adopten las medidas que estimen corresponder a través de la  Dirección de Asistencia y Rehabilitación (Centro Manantial tel. 44456759) a cargo de la Dra. Mariela Garnier, brinden colaboración y asesoramiento al grupo familiar de la denunciante +sexo+NombreDenunciante+ estos fines líbrese el oficio pertinente con URGENTE Y PREFERENTE DESPACHO cuya confección y diligenciamiento estará a cargo de la Defensoría Oficial patrocinante."+"\n")
+            drogadiccionresu=(romano[contadorromano]+"Dese intervención a la Subsecretaría de Prevención de Adicciones y Control de Drogas (tel. 4447797) dependiente del Ministerio de Salud, a fin de que con carácter de valiosa colaboración, a efectos de que tomen intervención en autos respecto a la situación de "+nombredroga+" y en el ámbito de su competencia adopten las medidas que estimen corresponder a través de la  Dirección de Asistencia y Rehabilitación (Centro Manantial tel. 44456759) a cargo de la Dra. Mariela Garnier, brinden colaboración y asesoramiento al grupo familiar de la denunciante "+sexo+" "+NombreDenunciante+"estos fines líbrese el oficio pertinente con URGENTE Y PREFERENTE DESPACHO cuya confección y diligenciamiento estará a cargo de la Defensoría Oficial patrocinante."+"\n")
             contadorromano=contadorromano+1
             Variablefinal=Variablefinal+drogadiccionresu
             break
@@ -595,15 +597,7 @@ def exclusion():
             break
 #///////////////////////////////////////////////////////////////////////////////////////////////////////
 #///////////////////////////////////////////////////////////////////////////////////////////////////////
-    os.system ("cls")
-    while True: 
-        reintegrodenunciante = input("¿Solicita la denunciante reintegro al hogar? (1=SI, 0=NO): ")
-        if reintegrodenunciante == "1":
-            contadorromano=contadorromano+1
-            reintegrodenunciante=(romano[contadorromano]+",con el correspondiente REINTEGRO de "+sexo+""+NombreDenunciante+"a su domicilio")
-            break
-        if reintegrodenunciante == "0":
-            break
+
 
 
     contadorromano=contadorromano+1
