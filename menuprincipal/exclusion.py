@@ -1,6 +1,6 @@
 def exclusion():
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
     import creadordecarpetas
     import time
     import os
@@ -29,24 +29,28 @@ def exclusion():
         Mes="Noviembre"
     if time.strftime("%B") == "December" :
         Mes="Diciembre"
-
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     romano=['I)','II)','III)','IV)','V)','VI)','VII)','VIII)','IX)','X)','XI)','XII)','XIII)','XIV)','XV)','XVI)','XVII)','XVIII)',
     'XIX)','XX)','XXI)','XXII)','XXIII)','XXIV)','XXV)','XXVI)','XXVII)','XXVIII)','XXIX)','XXX)']
     contadorromano=5
-
+    print("|-----------------------------------------------------------------------------------------------------------------------|")
+    print("|-----------------------------------INICIANDO PROGRAMA PARA EXCLUSION DEL HOGAR-----------------------------------------|")
+    print("|------------------------------------------by Halleyº-------------------------------------------------------------------|")
+    time.sleep(2)
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    os.system('cls')
     cerrarWhile=0
     while cerrarWhile==0:
         print ("**************************************RESOLUCION DE EXCLUSION DE HOGAR******************************")
-        print ("*****************************************DATOS DEL DENUNCIANTE**************************************")
-        
+        print ("*****************************************DATOS DEL EXPEDIENTE***************************************")   
         NdeExpediente=input("Numero de expediente (sin el año): ")
         AnioExpediente=input("Año del expediente: ")
         nuevoexp=NdeExpediente+"/"+AnioExpediente
         fs=input("Ingrese la Foja de la denuncia (Ej> 2/3)")
+        print ("**************************************RESOLUCION DE EXCLUSION DE HOGAR******************************")
+        print ("*****************************************DATOS DEL DENUNCIANTE**************************************")
         NombreDenunciante=input("Nombre completo del denunciante: ")
         NombreDenunciante=NombreDenunciante.upper()
 
@@ -88,15 +92,15 @@ def exclusion():
         print ("|//////////////////   LOS DATOS INGRESADOS SON:   //////////////|")
         print ("|///////////////////////////////////////////////////////////////|")
         print ("|///////////////////////////////////////////////////////////////|")
-        print ("|Nombre completo del denunciante: "+NombreDenunciante+"//////////|")
+        print ("|Nombre completo del denunciante:   "+NombreDenunciante+"//////////|")
         if SexoDenunciante == "1":
-            print ("|Sexo del/la denunciante: Femenino///////////////////////////|")
+            print ("|Sexo del/la denunciante:       Femenino///////////////////////|")
         if SexoDenunciante == "0":
-            print ("|Sexo del/la denunciante: Masculino//////////////////////////|")
-        print ("|D.N.I del denunciante: "+ Dnidenunciante+"//////////////////////|")
-        print ("|Domicio del denunciante: "+DomicilioDenunciante+"///////////////|")
-        print ("|N° de telefono del denunciante: "+NumeroDeTelefonoDenunciante+"/|")
-        print ("|Vinculo con el denunciado: "+VinculoConElDenunciado+"///////////|")
+            print ("|Sexo del/la denunciante:       Masculino//////////////////////|")
+        print ("|D.N.I del denunciante:            "+ Dnidenunciante+"/////////////|")
+        print ("|Domicio del denunciante:          "+DomicilioDenunciante+"////////|")
+        print ("|N° de telefono del denunciante:   "+NumeroDeTelefonoDenunciante+"/|")
+        print ("|Vinculo con el denunciado:        "+VinculoConElDenunciado+"//////|")
         print ("_________________________________________________________________")
         while True:
             preg=input ("Si la informacion es correcta, Ingrese 1, para volver a ingresar presione 0: ")
@@ -142,8 +146,8 @@ def exclusion():
             sexo1 = "el Sr."
         if SexoDenunciado == "1" :
             sexo1 = "la Sra."
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
         os.system ("cls")
         print ("|///////////////////////////////////////////////////////////////|")
         print ("|//////////////////   LOS DATOS INGRESADOS SON:   //////////////|")
@@ -194,7 +198,7 @@ def exclusion():
                     "De igual manera se dará intervención a la Subsecretaria de la Mujer y Familia, Dirección de Genero, dependiente del Ministerio de Desarrollo Social de la Provincia de Misiones, para que arbitren los medios necesarios en protección de la víctima y su entorno familiar."+"\n")
 
   
-    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #//////////////////////////////PREGUNTAS PREVIAS AL RESUELVO/////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     cerrarwhile=0
     while cerrarwhile==0:
@@ -211,7 +215,7 @@ def exclusion():
                     cerrarwhile=cerrarwhile+2
 
 
-    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #//////////////////////////////PREGUNTAS PREVIAS AL RESUELVO/////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     os.system ("cls")
     while True:
@@ -224,8 +228,8 @@ def exclusion():
             break
         if cantidaddemeses!="1" and cantidaddemeses!="2":
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #//////////////////////////////PREGUNTAS PREVIAS AL RESUELVO/////////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
     os.system ("cls")
     while True: 
         reintegrodenunciante = input("¿Solicita la denunciante reintegro al hogar? (1=SI, 0=NO): ")
@@ -235,11 +239,13 @@ def exclusion():
             break
         if reintegrodenunciante == "0":
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
     resuelvo=("Por ello, Ley Provincial XIV, Nº 6, las facultades atribuidas al suscripto por el art 4 de la misma, normas procesales y ccs.:"+"\n"
         "RESUELVO: "+romano[0]+"Téngase por recibidas denuncia de "+sexo+""+NombreDenunciante+", D.N.I. Nº "+Dnidenunciante+", domiciliada realmente en "+DomicilioDenunciante+"\n"
         +romano[1]+"Por iniciada acción de Violencia Familiar en los términos de la ley XIV-Nº 6 contra "+sexo1+" "+NombreDenunciado+" , D.N.I. Nº "+Dnidenunciado+", domiciliado actualmente "+DomicilioDenunciante+"\n"
@@ -247,13 +253,15 @@ def exclusion():
         +romano[3]+"Líbrese oficio a la Dirección de Asuntos de Familia y Género, Dirección General de Seguridad de la Policía de la Provincia de Misiones, a fin de que arbitren los medios necesarios para que una Comisión Policial a cargo de un Oficial de Policía que presente idoneidad para el diligenciamiento de la medida, teniendo en cuenta la situación particular de cada caso (si hay menores de edad, discapacitados, personas ancianas, si algunos de los involucrados revisten condición de agentes de seguridad de cualquier fuerza, y en su caso si en el lugar pueden haber armas de cualquier naturaleza) para que se constituyan en el término de 24 horas, en el domicilio sito en "+DomicilioDenunciante+" CUMPLIMENTEN CON LA EXCLUSIÓN DEL HOGAR "+sexo1+""+NombreDenunciado+" "+reintegrodenunciante+" ""Y NOTIFIQUEN LA PROHIBICIÓN DE ACCESO Y ACERCAMIENTO del mismo  a "+sexo+" "+NombreDenunciante+", su domicilio, lugares de trabajo y concurrencia por el termino de "+cm+", debiendo en dicho acto la comisión asignada, proceder resguardando la integridad física de la denunciante, del denunciado y todo el grupo familiar, teniéndose presente que la problemática familiar debe ser abordada con un elevado criterio de protección y respeto al núcleo familiar. Se le hace saber al denunciado que ante la desobediencia a la presente medida, se procederá a su ARRESTO por incumplimiento de orden judicial, en los términos y conforme a las facultades otorgadas al suscripto por el artículo 658 ley XII - No 27 DJM, quedando a disposición del Juez de Instrucción que por turno corresponda y/o de imponerle multa en los términos del art. 5 de la Ley XIV No 6 DJM. Se hace saber que la comisión policial se encuentra facultada en caso de ser estrictamente necesario allanar domicilio y utilizar los servicios de un cerrajero y toda otra medida prudente al solo efecto del cumplimiento de la orden judicial, debiéndose comunicar al suscripto en el plazo de 48 horas, la comisión asignada dando detalle pormenorizado de los agentes intervinientes y el resultado de la diligencia. Asimismo poner en conocimiento del denunciado excluido, que en este mismo acto puede retirar sus ropas, documentos personales, elementos de higiene y/o herramientas de trabajo si las tuviera, debiendo en dicho acto la comisión policial designada al efecto, realizar inventario de todas las pertenencias extraídas del hogar por parte del denunciado. Queda autorizado a intervenir en el diligenciamiento al Defensor Oficial y/o quien este designe con facultades de práctica. Debiendo informar a la Defensoría Oficial o abogado patrocinante el momento del diligenciamiento de la medida. Queda estrictamente prohibida la presencia de personas ajenas al excluido y a la Comisión Policial interviniente en el acto de exclusión."+"\n"
         +romano[4]+"Se hace saber al denunciado que podrá comparecer ante este juzgado y en estos obrados a fin de ejercer su derecho de defensa, con patrocinio letrado de abogado particular y/o Defensor Oficial. "+"\n")
     Variablefinal=Variablefinal+resuelvo  
-
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     os.system ("cls")
     cerrarWhile=0
@@ -287,8 +295,8 @@ def exclusion():
                     Variablefinal=Variablefinal+guardapro
                     cerrarWhile=cerrarWhile+1
                     break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
     os.system ("cls")
     while True:
         if pupilar=="1":
@@ -308,7 +316,7 @@ def exclusion():
             alimentos="0"
             break
 
-    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     os.system ("cls")
     while True:
@@ -327,8 +335,8 @@ def exclusion():
                 print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
         if BotonDepanico=="0":
             break
-    #///////////////////////////////////////////////////////////////////////////////////////////////////////
-    #///////////////////////////////////////////////////////////////////////////////////////////////////////        
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////     
 
         if conexidad == "1":
             contadorromano=contadorromano+1
@@ -336,7 +344,7 @@ def exclusion():
             Variablefinal=Variablefinal+resuconexidad
             break
     
-    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
     os.system ("cls")
@@ -352,7 +360,7 @@ def exclusion():
         if fiscalresu == "0":
             break
 
-    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
     os.system ("cls")
@@ -367,8 +375,8 @@ def exclusion():
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
         if resudefensoria == "0":
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
     os.system ("cls")
     while True: 
         subscreresu = input("¿Solicita intervencion de Subscretearia de la mujer y familia ? (1=SI, 0=NO): ")
@@ -381,14 +389,14 @@ def exclusion():
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
         if subscreresu == "0":
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
     if pupilar == "1":
         contadorromano=contadorromano+1
         pupilar=(romano[contadorromano]+"Dese intervención al representante del Ministerio Público Pupilar, a fin que la Defensoría Oficial que por turno corresponda, asuma la representación complementaria de los niños, niñas y adolescentes de autos, en resguardo de sus superiores intereses y dictamine respecto de las medidas adoptadas."+"\n")
         Variablefinal=Variablefinal+pupilar
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
     if alimentos=="1":
         contadorromano=contadorromano+1
         alifinal=(romano[contadorromano]+ "ESTABLECER una cuota alimentaria a favor de  "+nombrehijos+" en la suma de pesos "+montoletra+" ($"+montonum+") que deberá abonar "+sexo1+" "+NombreDenunciado+" y depositar en la sección depósitos judiciales del Banco Macro del primero al diez de cada mes, por el término de "+cm+", bajo apercibimiento de ley. Haciendo saber a la denunciante que dado el carácter transitorio de las medidas adoptadas en esta causa, una vez vencido el plazo de vigencia de la cuota deberá acreditar el inicio de la causa de alimentos por ante el fuero pertinente, bajo apercibimiento de ley. "+"\n")
@@ -396,15 +404,15 @@ def exclusion():
         contadorromano=contadorromano+1
         alifinal1=(romano[contadorromano]+"DISPONER que se libre oficio al Banco Macro a fin de que procedan a la apertura de una cuenta a la orden del Juzgado y como perteneciente al juicio de la carátula y abonen a "+sexo+" "+NombreDenunciante+" las sumas depositadas y/o a depositarse en  la misma por el plazo de "+cm+"."+"\n")
         Variablefinal=Variablefinal+alifinal1
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
     if BotonDepanico == "1":
         contadorromano=contadorromano+1
         BotonDepanicoresu1=(romano[contadorromano]+"Atento a la gravedad de los hechos denunciados, corresponder proveer a "+sexo+" "+NombreDenunciante+ " D.N.I. Nº " +Dnidenunciante+ "realmente en "+DomicilioDenunciante+" de un Botón de Pánico, el cual tendrá una vigencia de "+cm+", será efectivizado en este Juzgado y comunicado a la Secretaria Técnica en Informática y de Superintendencia del S.T.J, una vez que la denunciante manifieste su número de celular, modelo del mismo y sistema operativo, debiendo presentarse ésta ante los estrados del presente Juzgado por ante el actuario, en el término de 48 hs. de notificada la presente, bajo apercibimiento de Ley, notifíquese personalmente o por cédula estando a cargo de la defensoría oficial patrocinante la confección de la correspondiente cédula y su diligenciamiento. Cumplido, líbrese el correspondiente Oficio a la Secretaria Técnica en Informática y de Superintendencia del S.T.J a los fines dispuestos ut-supra."+"\n")
         BotonDepanicoresu2=(romano[contadorromano]+"Efectuada la instalación del botón de pánico a la denunciante, líbrese oficios por medio del SIGED a la Dirección de Violencia y Género de la Policía de Misiones, en coordinación con el Centro Integral de Operaciones (911); a la Subsecretaria de Relaciones con la comunidad -Ministerio de Gobierno- Línea 137 Programa las Víctimas contra las Violencias y Subsecretaria de Seguridad y Justicia -Ministerio de Gobierno- a fin de que reporten a sus respectivas jurisdicciones."+"\n")
         Variablefinal=Variablefinal+BotonDepanicoresu1+BotonDepanicoresu2
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////        
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////      
     os.system ("cls")
     while True: 
         informedeinteraccionfamiliar = input("¿Solicita interaccion familiar (Tevez) ? (1=SI, 0=NO): ")
@@ -417,8 +425,9 @@ def exclusion():
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
         if informedeinteraccionfamiliar == "0":
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+
     os.system ("cls")
     while True: 
         cuerpomedico = input("¿Solicita entrevista psicológica por el cuerpo medico forense ? (1=SI, 0=NO): ")
@@ -431,8 +440,9 @@ def exclusion():
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
         if cuerpomedico == "0":
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+
     os.system ("cls")
     while True: 
         Primeraaudiencia = input("¿Solicita primera audiencia?  (1=SI, 0=NO): ")
@@ -453,8 +463,9 @@ def exclusion():
             break
         if Primeraaudiencia == "0":
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+
     os.system ("cls")
     while True:
         anmac = input ("¿Hay armas (anmac)?(1=SI, 0=NO): ")
@@ -468,8 +479,9 @@ def exclusion():
             break
         if anmac != "0" and anmac != "1":
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+
     os.system ("cls")
     while True:
         drogadiccion = input ("¿Necesita de  intervención a la Subsecretaría de Prevención de Adicciones ?(1=SI, 0=NO): ")
@@ -490,8 +502,9 @@ def exclusion():
             break
         if drogadiccion != "0" and drogadiccion != "1":
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+
     os.system ("cls")
     while True:
         reingro=input("¿Hay restitucion de bienes?(1=SI, 0=NO): ")
@@ -509,8 +522,10 @@ def exclusion():
                 reingrobienes=(romano[contadorromano]+" En cuanto a la restitución de bienes considero que en razón de lo ordenado en la presente y a los efectos de evitar que se produzcan nuevas situaciones de violencia, deberá " +sexo1+" "+NombreDenunciado+" denunciar bienes y designar una persona, los datos de la misma (nombre y apellido, D.N.I, etc) autorizada por la misma a participar en el acto de retiro de bienes, la que quedará en calidad de depositario judicial de las pertenencias que en su caso se les restituirán debiendo acreditar la titularidad de los mismos."+"\n")
             Variablefinal=Variablefinal+reingrobienes
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+
     os.system ("cls")
     while True:
         direcciondeinfacancia=input("¿Disponer de Dirección de Infancia del Ministerio de Desarrollo Social?(1=SI, 0=NO): ")
@@ -523,8 +538,10 @@ def exclusion():
             infacancia=(romano[contadorromano]+"Líbrese oficio a la Dirección de Infancia del Ministerio de Desarrollo Social a efectos que evalúe la situación de los menores y disponga o proponga en forma URGENTE las medidas de protección que considere necesarias, remitiendo el informe correspondiente al suscripto a la mayor brevedad y las medidas adoptadas, todo ello en los términos de la Ley II No 16 art. 36, 37, 38 y 41 tercer párrafo.Quedando a cargo su confección y diligenciamiento de la Defensoría Patrocinante."+"\n")
             Variablefinal=Variablefinal+infacancia
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+
     os.system ("cls")
     while True:
         busquedayparaderoresu=input("¿Necesita de busqueda y paradero?(1=SI, 0=NO): ")
@@ -537,8 +554,10 @@ def exclusion():
             busqueda=(romano[contadorromano]+"Agréguese el informe que antecede y en atención a lo comunicado, como así también a los efectos de que se efectivice la notificación de la medida ordenada  en la causa, líbrese oficio al Departamento de Búsqueda de destino y paradero de la Policía de la Provincia de Misiones, a fin de dar con el paradero del "+sexo1+" "+NombreDenunciado+" D.N.I Nº "+Dnidenunciado+", y una vez habido, se proceda a informar al Defensor Oficial Nº1 de Violencia Familiar a cargo de la Dra. María Alejandra Ortega, a sus efectos."+"\n")
             Variablefinal=Variablefinal+busqueda
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+
     os.system ("cls")
     while True:
         ancianidad=input("¿Disponer del Departamento de Ancianidad? (1=SI, 0=NO): ")
@@ -552,8 +571,9 @@ def exclusion():
             anciano=(romano[contadorromano]+"Dése intervención al Departamento de Ancianidad, dependiente del Ministerio de Desarrollo Social, a fin de que tomen conocimiento de la situación de "+nombreanciano+" y practiquen las medidas necesarias a fin de salvaguardar la integridad psicofísica de la misma e informe al suscripto las medidas adoptadas. Oficiese a sus efectos.-"+"\n")
             Variablefinal=Variablefinal+anciano
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+
     os.system ("cls")
     while True:
         reguntacejume=input("¿Enviar a CE.JU.ME?(1=SI, 0=NO): " )
@@ -566,8 +586,8 @@ def exclusion():
             pregceju=(romano[contadorromano]+"Hacer saber a "+sexo+" "+NombreDenunciante+" que para resolver las cuestiones de fondo, relativas a los ALIMENTOS, CUIDADO PERSONAL, Y RÉGIMEN DE COMUNICACIÓN Y CONTACTO de forma definitica, podrá recurrir al CEJUME a los fines de cumplimentar con la etapa de Advenimiento, conforme lo dispone el art. 653 del C.PCC y V.F., con patrocinio letrado de la Defensoria Oficial que por turno corresponda y/o abogado particular, a cuyo fin deberán concurrir por ante la DEUT, a fin de ser asesorado en su derecho o ser patrocinado en dicha materia."+"\n")
             Variablefinal=Variablefinal+pregceju
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
     os.system ("cls")
     while True:
@@ -581,8 +601,10 @@ def exclusion():
             serviso=(romano[contadorromano]+"Líbrese oficio a través del SIGED, a la Dirección de Asuntos de Familia y Género, de la Policía de la Provincia de Misiones, a fin de que el personal del Servicio Social de dicha institución, a modo de valiosa colaboración, se apersonen y realicen de manera URGENTE un amplio informe socio ambiental en el domicilio sito en"+DomicilioDenunciante+", respecto de: 1)- El estado de la vivienda, 2)- Personas que habitan en el domicilio, 3)- Relación de vecindad, 4)- Si las menores tiene seguimiento de salud (como ser vacunaciones, controles médicos, etc.), 5)- Personas que se encuentran en el hogar al momento de la entrevista y su relación con la familia, 6)- Si existe violencia psicofísica y todo otro dato de interés respecto de toda situación familiar actual."+"\n")
             Variablefinal=Variablefinal+serviso
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
+
     os.system ("cls")
     while True: 
         oficioprovincial = input("¿Solicita Oficio al Registro Provincial de Actuaciones de Violencia? (1=SI, 0=NO): ")
@@ -595,11 +617,9 @@ def exclusion():
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
         if oficioprovincial == "0":
             break
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
-#///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
+    #///////////////////////////////////////////CREADOR DE ARCHIVOS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
     contadorromano=contadorromano+1
     finalres=(romano[contadorromano]+"EXPEDIR copia certificada de la presente si fuere menester."+"\n")
     Variablefinal=Variablefinal+finalres
@@ -615,10 +635,16 @@ def exclusion():
     archivo.write("\n")
     archivo.write(Variablefinal)
     archivo.close()
+    #///////////////////////////////////////////CREADOR DE ARCHIVOS/////////////////////////////////////////
+    #///////////////////////////////////////////////////////////////////////////////////////////////////////
     print ("************************************************************************************************************************************")
-    print ("********************************************ARCHIVO GENERADO EXITOSAMENTE***********************************************************")
+    print ("********************************************RESOLICION DE EXCLUSION GENERADA EXITOSAMENTE*******************************************")
     print ("************************************************************************************************************************************")
     time.sleep(2)
+    print ("BY GUIDO HALLEY JUZGADO DE VIOLENCIA FAMILIAR")
+    time.sleep(2)
+    import menuprincipal
+    menuprincipal.menuprincipal()
+#----------------------------------------------------------------------------------------------------------------------------------
 exclusion()
-
 #----------------------------------------------------------------------------------------------------------------------------------

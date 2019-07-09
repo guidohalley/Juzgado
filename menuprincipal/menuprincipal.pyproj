@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>78af9040-6046-4866-863d-160e95957547</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>exlusion.py</StartupFile>
+    <StartupFile>menuprincipal.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,7 +28,7 @@
     <Compile Include="confirmaciones.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="exlusion.py">
+    <Compile Include="exclusion.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="desestimatoria.py">
