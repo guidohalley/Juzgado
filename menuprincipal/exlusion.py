@@ -288,7 +288,9 @@ def exclusion():
             if SexoDenunciante=="1":
                 botonpanico=("En virtud a la naturaleza  de la presente causa y el riesgo  a la que podría estar sujeta la denunciante y su familia conforme surge de los elementos aportados, corresponde proveer a "+sexo+" "+NombreDenunciante+" con D.N.I N° "+Dnidenunciante + ", con domicilio en "+DomicilioDenunciante+", de un Botón de Pánico."+"\n")
                 Variablefinal=Variablefinal+BotonDepanico
-                break    
+                break 
+            
+            #VER ACA
         if SexoDenunciante=="0":
                 botonpanico=("En virtud a la naturaleza  de la presente causa y el riesgo  a la que podría estar sujeta la denunciante y su familia conforme surge de los elementos aportados, corresponde proveer a "+sexo+" "+NombreDenunciante+" con D.N.I N° "+Dnidenunciante + ", con domicilio en "+DomicilioDenunciante+", de un Botón de Pánico."+"\n")
                 Variablefinal=Variablefinal+BotonDepanico
