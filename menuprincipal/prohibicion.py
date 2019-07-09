@@ -108,8 +108,7 @@ def prohibicion():
 	cerrarWhile=0
 	while cerrarWhile==0:
 		print ("*****************************RESOLUCION DE PROHIBICION DE ACERCAMIENTO******************************")
-		print ("****************************************DATOS DEL DENUNCIADO****************************************")
-        print ("\n")
+		print ("****************************************DATOS DEL DENUNCIADO****************************************\n")
 		NombreDenunciado=input("Nombre completo del denunciado: ")
 		NombreDenunciado=NombreDenunciado.upper()
 		while True:
