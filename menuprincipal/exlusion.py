@@ -277,21 +277,21 @@ def exclusion():
 	os.system ("cls")
 	#///////////////////////////////////////////////////////////////////////////////////////////////////////
 	#///////////////////////////////////////////////////////////////////////////////////////////////////////
-while True:
-    BotonDepanico = input("¿Solicita boton de panico? (1=SI, 0=NO): ")
-        if BotonDepanico=="1":
-            if SexoDenunciante=="1":
-                botonpanico=("En virtud a la naturaleza  de la presente causa y el riesgo  a la que podría estar sujeta la denunciante y su familia conforme surge de los elementos aportados, corresponde proveer a "+sexo+" "+NombreDenunciante+" con D.N.I N° "+Dnidenunciante + ", con domicilio en "+DomicilioDenunciante+", de un Botón de Pánico."+"\n")
-                Variablefinal=Variablefinal+BotonDepanico
-                break
-        if SexoDenunciante=="0":
-            botonpanico=("En virtud a la naturaleza  de la presente causa y el riesgo  a la que podría estar sujeta la denunciante y su familia conforme surge de los elementos aportados, corresponde proveer a "+sexo+" "+NombreDenunciante+" con D.N.I N° "+Dnidenunciante + ", con domicilio en "+DomicilioDenunciante+", de un Botón de Pánico."+"\n")
-            Variablefinal=Variablefinal+BotonDepanico
-            break
-        if BotonDepanico!="1" and BotonDepanico!="0":
-            print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-        if BotonDepanico=="0":
-            break
+        while True:
+            BotonDepanico = input("¿Solicita boton de panico? (1=SI, 0=NO): ")
+                if BotonDepanico=="1":
+                    if SexoDenunciante=="1":
+                        botonpanico=("En virtud a la naturaleza  de la presente causa y el riesgo  a la que podría estar sujeta la denunciante y su familia conforme surge de los elementos aportados, corresponde proveer a "+sexo+" "+NombreDenunciante+" con D.N.I N° "+Dnidenunciante + ", con domicilio en "+DomicilioDenunciante+", de un Botón de Pánico."+"\n")
+                        Variablefinal=Variablefinal+BotonDepanico
+                        break
+                if SexoDenunciante=="0":
+                    botonpanico=("En virtud a la naturaleza  de la presente causa y el riesgo  a la que podría estar sujeta la denunciante y su familia conforme surge de los elementos aportados, corresponde proveer a "+sexo+" "+NombreDenunciante+" con D.N.I N° "+Dnidenunciante + ", con domicilio en "+DomicilioDenunciante+", de un Botón de Pánico."+"\n")
+                    Variablefinal=Variablefinal+BotonDepanico
+                    break
+                if BotonDepanico!="1" and BotonDepanico!="0":
+                    print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
+                if BotonDepanico=="0":
+                    break
 
 resuelvo=("Por ello, Ley Provincial XIV, Nº 6, las facultades atribuidas al suscripto por el art 4 de la misma, normas procesales y ccs.:"+"\n"
 	    "RESUELVO: "+romano[0]+"Téngase por recibidas denuncia de "+sexo+""+NombreDenunciante+", D.N.I. Nº "+Dnidenunciante+", domiciliada realmente en "+DomicilioDenunciante+"\n"
