@@ -81,10 +81,13 @@ def exclusion():
         os.system ("cls")
         print ("_________________________________________________________________")
         print ("|///////////////////////////////////////////////////////////////|")
-        print ("|Numero de expediente : "+NdeExpediente+"/"+AnioExpediente"/////|")
+        print ("|Numero de expediente : "+NdeExpediente+"/"+AnioExpediente+"////|")
         print ("|///////////////////////////////////////////////////////////////|")
-
-        print ("|Nombre completo del denunciante: "+NombreDenunciante"///////////|")
+        print ("|///////////////////////////////////////////////////////////////|")
+        print ("|//////////////////   LOS DATOS INGRESADOS SON:   //////////////|")
+        print ("|///////////////////////////////////////////////////////////////|")
+        print ("|///////////////////////////////////////////////////////////////|")
+        print ("|Nombre completo del denunciante: "+NombreDenunciante+"//////////|")
         if SexoDenunciante == "1":
             print ("|Sexo del/la denunciante: Femenino///////////////////////////|")
         if SexoDenunciante == "0":
@@ -168,10 +171,9 @@ def exclusion():
 
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
-    os.system ("cls")
-    print ("********************************************")
-    print ("* DATOS CONCRETOS DE LA DENUNCIA EN 3ERA P *")
-    print ("********************************************")
+        print ("|///////////////////////////////////////////////////////////////|")
+        print ("|/// INGRESE DATOS CONCRETOS, EN LO POSIBLE EN 3ERA PERSONA ////|")
+        print ("|///////////////////////////////////////////////////////////////|")
 
     DenunciaConcreta = input("Concretamente la denunciante  manifiesta que: ")
     Variablefinal=("Concretamente denuncia que " +DenunciaConcreta+"\n"+
