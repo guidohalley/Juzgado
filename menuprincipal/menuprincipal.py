@@ -41,5 +41,8 @@ if opcion=="2":
     import exclusion
     exclusion.exclusion()
 
-    import menuprincipal
-    menuprincipal.menuprincipal()
+if opcion=="3":
+    import os
+    time.sleep(2)
+    import confirmaciones
+    confirmaciones.confirmaciones()

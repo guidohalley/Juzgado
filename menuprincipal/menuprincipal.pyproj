@@ -31,9 +31,6 @@
     <Compile Include="exclusion.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="desestimatoria.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="prohibicion.py">
       <SubType>Code</SubType>
     </Compile>
