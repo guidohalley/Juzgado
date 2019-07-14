@@ -181,7 +181,8 @@ def exclusion():
         print ("|///////////////////////////////////////////////////////////////|")
 
     DenunciaConcreta = input("Concretamente la denunciante  manifiesta que: ")
-    Variablefinal=("CONSIDERANDO: Que a fs."+fs+" obra denuncia de "+sexo+" "+NombreDenunciante  + " D.N.I" + " N°: "+Dnidenunciante+" con domicilio en " + DomicilioDenunciante + " con N° de Teléfono: "+ NumeroDeTelefonoDenunciante + " contra  quien fuera su " +VinculoConElDenunciado+" "+ sexo1 + " "+NombreDenunciado+""+NumeroDeTelefonoDenunciado+"\n"
+    Variablefinal=("CONSIDERANDO: Que a fs. 2/3,obra denuncia de "+sexo+" "+NombreDenunciante  + " D.N.I" + " N°: "+Dnidenunciante+" con domicilio en " + DomicilioDenunciante + " con N° de Teléfono: "+ NumeroDeTelefonoDenunciante + " contra  quien fuera su " +VinculoConElDenunciado+" "+ sexo1 + " "+NombreDenunciado +
+				" domiciliado en " + DomicilioDenunciado+ ". Con Teléfono N°: " + NumeroDeTelefonoDenunciado+"."+"\n"+
                    "Concretamente denuncia que " +DenunciaConcreta+"\n"+
                     "Que la norma provincial citada entiende a la violencia familiar como '...toda acción, omisión, abuso o abandono que afecte la integridad física, psíquica, moral, sexual, patrimonial y la libertad de la misma (en referencia al/la denunciante) en el ámbito familiar aunque no configure delito, sea ésta en forma permanente o temporaria...'"+"\n"
                     "Que, tal como se señaló en el III Congreso de Derecho de Familia (El Salvador, 1992) en las situaciones de violencia que se generan dentro de la familia se conculcan derechos fundamentales de las víctimas... 'El maltrato es cualquier acto u omisión que directa o indirecta mediante cualquiera de los miembros que conforman el grupo familiar, ya sea de una familia nuclear o extensa que constituye una clara violación de los derechos humanos'."+"\n"
@@ -646,5 +647,5 @@ def exclusion():
     import menuprincipal
     menuprincipal.menuprincipal()
 #----------------------------------------------------------------------------------------------------------------------------------
-exclusion()
+
 #----------------------------------------------------------------------------------------------------------------------------------
