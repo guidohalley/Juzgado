@@ -188,19 +188,21 @@ def confirmacion():
                 while True:
                     if medijp == "1":
                         medidasjpexpro == ("PROHIBICION DE ACERCAMIENTO")
+                        break
                     if medijp == "2":
                         medidasjpexpro == ("EXCLUSION DEL HOGAR")
-                cantidaddemeses = input("Ingrese el plazo a ordenar para confirmar, 1 = 3 meses| 2 = 6 meses ")
-                if cantidaddemeses=="1":
-                    cm="3(trés)Meses"
-                    break
-                if cantidaddemeses=="2":
-                    cm="6(seis)Meses"
-                    break
-                if cantidaddemeses!="1" and cantidaddemeses!="2":
-                    print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-                    medidasjp == ("CONFIRMAR las medidas adoptadas en las actuaciones, a fs."+fsresjp+""+"No confirmar el plazo de"+fsresjp+".Disponer que el plazo de la "+medidasjpexpro+" ordenada sera de "+cm+"."+"\n")
-                   break
+                        break
+            cantidaddemeses = input("Ingrese el plazo a ordenar para confirmar, 1 = 3 meses| 2 = 6 meses ")
+            if cantidaddemeses=="1":
+                cm="3(trés)Meses"
+                break
+            if cantidaddemeses=="2":
+                cm="6(seis)Meses"
+                break
+            if cantidaddemeses!="1" and cantidaddemeses!="2":
+                print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
+                medidasjp == ("CONFIRMAR las medidas adoptadas en las actuaciones, a fs."+fsresjp+""+"No confirmar el plazo de fs "+fsresjp+".Disponer que el plazo de la "+medidasjpexpro+" ordenada sera de "+cm+"."+"\n")
+                break
 
                     
         Variablefinal=("Y CONSIDERANDO: Ante la Comisaria "+Comisaria+","+sexo+" "+NombreDenunciante+" D.N.I. Nº "+Dnidenunciante+", con domicilio en "+DomicilioDenunciante+",  ha realizado denuncia por Violencia Familiar en contra de quien fuera su "+VinculoConElDenunciado+", "+sexo1+""+NombreDenunciado+" D.N.I Nº "+Dnidenunciado+", con domicilio en "+DomicilioDenunciado+"."+"\n"
