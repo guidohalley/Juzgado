@@ -47,9 +47,9 @@ def confirmacion():
         print ("*****************************************DATOS DEL EXPEDIENTE***************************************")   
         NdeExpediente=input("Numero de expediente (sin el año): ")
         AnioExpediente=input("Año del expediente: ")
-        Localidad=input("Ingrese el Nombre de la Localidad donde se Radicó la denuncia: ")
-        Comisaria = input("Ingrese el Nombre de la Comisaria donde se Radicó la denuncia: ")
-        fsresjp=input("Ingrese la Foja de la Resolucion del Juzgado de paz (Ejemplo > 2/3):  ")
+        Localidad=input("Ingrese el Nombre de la Localidad y Provincia donde se Radicó la denuncia: ")
+        Comisaria = input("Ingrese el Nombre de la COMISARIA donde se Radicó la denuncia: ")
+        fsresjp=input("Ingrese la Foja de la Resolucion del Juzgado de paz (Ejemplo > 2/3): ")
         nuevoexp=NdeExpediente+"/"+AnioExpediente
         fs=input("Ingrese la Foja de la denuncia (Ej> 2/3): ")
         print ("**************************************RESOLUCION DE CONFIRMACIONES**********************************")
@@ -175,43 +175,55 @@ def confirmacion():
                 print ("OPCION INCORRECTA, VUELVA A INGRESAR LA OPCION.")
             if preg == "0":
                 break
+
+            
+
         os.system ("cls")
+        while True:
+            medidasjpconf=input("Confirmar el plazo? ingrese 1 si desea confirmar el plazo ordenado o 0 si va a cambiar el plazo")
+            if medidasjpconf == "1":
+                medidasjp == ("CONFIRMAR las medidas adoptadas en las actuaciones, a fs."+fsresjp+"."+"\n")
+            if medidasjpconf == "0":
+                medijp=input(" que medida tomo el juez de paz ? 1 prohibicion de acercamiento, 2 exclusion de hogar")
+                while True:
+                    if medijp == "1":
+                        medidasjpexpro == ("PROHIBICION DE ACERCAMIENTO")
+                    if medijp == "2":
+                        medidasjpexpro == ("EXCLUSION DEL HOGAR")
+                cantidaddemeses = input("Ingrese el plazo a ordenar para confirmar, 1 = 3 meses| 2 = 6 meses ")
+                if cantidaddemeses=="1":
+                    cm="3(trés)Meses"
+                    break
+                if cantidaddemeses=="2":
+                    cm="6(seis)Meses"
+                    break
+                if cantidaddemeses!="1" and cantidaddemeses!="2":
+                    print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
+                    medidasjp == ("CONFIRMAR las medidas adoptadas en las actuaciones, a fs."+fsresjp+""+"No confirmar el plazo de"+fsresjp+".Disponer que el plazo de la "+medidasjpexpro+" ordenada sera de "+cm+"."+"\n")
+                   break
 
-    #///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    Variablefinal=("Y CONSIDERANDO: Ante la Comisaria "+Comisaria+","+sexo+" "+NombreDenunciante+" D.N.I. Nº "+Dnidenunciante+", con domicilio en "+DomicilioDenunciante+",  ha realizado denuncia por Violencia Familiar en contra de quien fuera su "+VinculoConElDenunciado+", "+sexo1+""+NombreDenunciado+" D.N.I Nº "+Dnidenunciado+", con domicilio en "+DomicilioDenunciado+"."+"\n"
-                    "Analizadas las constancias de la causa, se advierte que a fs. "+fsresjp+" obra resolución del Juez de Paz de la localidad de "+Localidad+", conforme lo establece el art.657 del CPCC. y F., el mismo ha dispuesto medidas de "+medidasjp+" y siendo que el Juez de Paz actuante, ha resuelto las medidas pertinentes teniendo en consideración la extrema urgencia que amerita la situación conforme la Ley de Violencia Familiar y en el marco del art. 657 del CPCC y F. y habiéndose remitido a este Juzgado corresponde ratificar la misma en virtud a las facultades atribuidas al suscripto por el art. 36 del CPCC y VF.")
+                    
+        Variablefinal=("Y CONSIDERANDO: Ante la Comisaria "+Comisaria+","+sexo+" "+NombreDenunciante+" D.N.I. Nº "+Dnidenunciante+", con domicilio en "+DomicilioDenunciante+",  ha realizado denuncia por Violencia Familiar en contra de quien fuera su "+VinculoConElDenunciado+", "+sexo1+""+NombreDenunciado+" D.N.I Nº "+Dnidenunciado+", con domicilio en "+DomicilioDenunciado+"."+"\n"
+        "Analizadas las constancias de la causa, se advierte que a fs. "+fsresjp+" obra resolución del Juez de Paz de la localidad de "+Localidad+", conforme lo establece el art.657 del CPCC. y F., el mismo ha dispuesto medidas de "+medidasjp+" y siendo que el Juez de Paz actuante, ha resuelto las medidas pertinentes teniendo en consideración la extrema urgencia que amerita la situación conforme la Ley de Violencia Familiar y en el marco del art. 657 del CPCC y F. y habiéndose remitido a este Juzgado corresponde ratificar la misma en virtud a las facultades atribuidas al suscripto por el art. 36 del CPCC y VF.")
   
     #//////////////////////////////PREGUNTAS PREVIAS AL RESUELVO/////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
-    cerrarwhile=0
-    while cerrarwhile==0:
-            conexidad = input("¿Hay conexidad?  (1=SI, 0=NO): ")
-            if conexidad != "0" and conexidad != "1":
-                    print ("OPCION INCORRECTA, VUELVA A INGRESAR LA OPCION.")
-            if conexidad == "1":
-                    numexpco=input("Numero de expediente de la conexidad (sin el año): ")
-                    anioexpcon=input("Año del expediente: ")
-                    numexptecon=numexpco+"/"+anioexpcon
-                    caratulacon=input("COPIE la caratula de la conexidad: ")
-                    cerrarwhile=cerrarwhile+1
-            if conexidad == "0":
-                    cerrarwhile=cerrarwhile+2
+        cerrarwhile=0
+        while cerrarwhile==0:
+                conexidad = input("¿Hay conexidad?  (1=SI, 0=NO): ")
+                if conexidad != "0" and conexidad != "1":
+                        print ("OPCION INCORRECTA, VUELVA A INGRESAR LA OPCION.")
+                if conexidad == "1":
+                        numexpco=input("Numero de expediente de la conexidad (sin el año): ")
+                        anioexpcon=input("Año del expediente: ")
+                        numexptecon=numexpco+"/"+anioexpcon
+                        caratulacon=input("COPIE la caratula de la conexidad: ")
+                        cerrarwhile=cerrarwhile+1
+                if conexidad == "0":
+                        cerrarwhile=cerrarwhile+2
 
 
-    #//////////////////////////////PREGUNTAS PREVIAS AL RESUELVO/////////////////////////////////////////////
-    #///////////////////////////////////////////////////////////////////////////////////////////////////////
-    os.system ("cls")
-    while True:
-        cantidaddemeses = input("exclusion 1 = 3 meses     2 = 6 meses ")
-        if cantidaddemeses=="1":
-            cm="3(trés)Meses"
-            break
-        if cantidaddemeses=="2":
-            cm="6(seis)Meses"
-            break
-        if cantidaddemeses!="1" and cantidaddemeses!="2":
-            print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
+
     #//////////////////////////////PREGUNTAS PREVIAS AL RESUELVO/////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     os.system ("cls")
@@ -626,3 +638,5 @@ def confirmacion():
     time.sleep(2)
     import menuprincipal
     menuprincipal.menuprincipal()
+
+confirmacion()
