@@ -287,7 +287,8 @@ def prohibicion():
 	            print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
 	    if BotonDepanico=="0":
 	            break
-	resuelvo=("RESUELVO: "+romano[0]+"Téngase por recibidas denuncia de "+sexo+" "+ NombreDenunciante+" con domicilio en "+ DomicilioDenunciante+ "\n"+
+	resuelvo=("Por ello, Ley Provincial XIV, Nº 6, las facultades atribuidas al suscripto por el art 4 de la misma, normas procesales y ccs.:"+"\n"
+                "RESUELVO:"+romano[0]+"Téngase por recibidas denuncia de "+sexo+" "+ NombreDenunciante+" con domicilio en "+ DomicilioDenunciante+ "\n"+
 				romano[1]+"Por iniciada acción de Violencia Familiar en los términos de la ley XIV-No 6 contra "+sexo1+" "+NombreDenunciado+ " con domicilio en " +DomicilioDenunciado+"."+"\n"+
 				romano[2]+"Ordenar "+sexo1+" "+NombreDenunciado+" la PROHIBICION DE ACCESO Y ACERCAMIENTO respecto de "+sexo+" "+NombreDenunciante+" y tambien del domicilio sito en "+DomicilioDenunciante+" y de donde estos se encuentren viviendo, como también sus lugares de trabajo y/o concurrencia o circulación, por el término de "+cm+". Hágase saber al denunciado que la prohibición de acercamiento importa suspender todo tipo de contacto físico, telefónico, de telefonía celular, de correo postal y electrónico, redes sociales y/o por cualquier medio que signifique una intromisión injustificada con relación a la denunciante; todo ello bajo apercibimiento de que ante la desobediencia a la presente medida, se procederá a su ARRESTO por incumplimiento de orden judicial, en los términos y conforme a las facultades otorgadas al suscripto por el artículo 658 ley XII - Nº 27 DJM, quedando a disposición del Juez de Instrucción que por turno corresponda y/o de imponerle multa en los  términos del art. 5 de la Ley XIV Nº 6 DJM."+"\n"+
 				romano[3]+"Líbrese oficio por medio del SIGED (Sistema Gestión de Expediente Digital), a la Dirección de Asuntos de Familia y Genero, Dirección General de Seguridad de la Policía de la Provincia de Misiones sito en calle Félix de Azara casi Santiago del Estero de esta ciudad de Posadas, a fin de que tomen conocimiento de la medida dispuesta y proceda a NOTIFICAR lo ordenado a " +sexo1+" "+NombreDenunciado+ " con domicilio en "+DomicilioDenunciado+" y a "+sexo+" "+NombreDenunciante+" con domicilio en "+DomicilioDenunciante+". con telefono Celular Nº: "+NumeroDeTelefonoDenunciante+" debiendo informar al Juzgado interviniente, fecha y hora de su diligenciamiento, todo ello, CON CARACTER URGENTE."+"\n"+
@@ -425,7 +426,7 @@ def prohibicion():
 				c=c+1
 				ca=input("Nombre de la persona " + str(c) + " : ")
 				nombredroga=ca+", "+ nombredroga
-			drogadiccionresu=(romano[contadorromano]+"Dese intervención a la Subsecretaría de Prevención de Adicciones y Control de Drogas (tel. 4447797) dependiente del Ministerio de Salud, a fin de que con carácter de valiosa colaboración, a efectos de que tomen intervención en autos respecto a la situación de "+nombredroga+" y en el ámbito de su competencia adopten las medidas que estimen corresponder a través de la  Dirección de Asistencia y Rehabilitación (Centro Manantial tel. 44456759) a cargo de la Dra. Mariela Garnier, brinden colaboración y asesoramiento al grupo familiar de la denunciante +sexo+NombreDenunciante+ estos fines líbrese el oficio pertinente con URGENTE Y PREFERENTE DESPACHO cuya confección y diligenciamiento estará a cargo de la Defensoría Oficial patrocinante."+"\n")
+			drogadiccionresu=(romano[contadorromano]+"Dese intervención a la Subsecretaría de Prevención de Adicciones y Control de Drogas (tel. 4447797) dependiente del Ministerio de Salud, a fin de que con carácter de valiosa colaboración, a efectos de que tomen intervención en autos respecto a la situación de "+nombredroga+" y en el ámbito de su competencia adopten las medidas que estimen corresponder a través de la  Dirección de Asistencia y Rehabilitación (Centro Manantial tel. 44456759) a cargo de la Dra. Mariela Garnier, brinden colaboración y asesoramiento al grupo familiar de la denunciante "+sexo+""+NombreDenunciante+" estos fines líbrese el oficio pertinente con URGENTE Y PREFERENTE DESPACHO cuya confección y diligenciamiento estará a cargo de la Defensoría Oficial patrocinante."+"\n")
 			contadorromano=contadorromano+1
 			Variablefinal=Variablefinal+drogadiccionresu
 			break
@@ -545,4 +546,4 @@ def prohibicion():
 	print ("****** ARCHIVO GENERADO EXITOSAMENTE *******")
 	print ("********************************************")
 
-prohibicion()
+
