@@ -180,33 +180,35 @@ def confirmacion():
 
         os.system ("cls")
         while True:
-            medidasjpconf=input("Confirmar el plazo? ingrese 1 si desea confirmar el plazo ordenado o 0 si va a cambiar el plazo")
+            medidasjpconf=input("Confirmar el plazo? ingrese 1 si desea confirmar el plazo ordenado o 0 si va a cambiar el plazo: ")
             if medidasjpconf == "1":
-                medidasjp == ("CONFIRMAR las medidas adoptadas en las actuaciones, a fs."+fsresjp+"."+"\n")
+               medidasjp = ("CONFIRMAR las medidas adoptadas en las actuaciones, tomadas en fs."+fsresjp+"."+"\n")
             if medidasjpconf == "0":
-                medijp=input(" que medida tomo el juez de paz ? 1 prohibicion de acercamiento, 2 exclusion de hogar")
+                medijp=input(" que medida tomo el juez de paz ? 1 prohibicion de acercamiento, 2 exclusion de hogar:")
                 while True:
                     if medijp == "1":
-                        medidasjpexpro == ("PROHIBICION DE ACERCAMIENTO")
+                        medidasjpexpro = ("PROHIBICION DE ACERCAMIENTO")
                         break
                     if medijp == "2":
-                        medidasjpexpro == ("EXCLUSION DEL HOGAR")
+                        medidasjpexpro = ("EXCLUSION DEL HOGAR")
                         break
-            cantidaddemeses = input("Ingrese el plazo a ordenar para confirmar, 1 = 3 meses| 2 = 6 meses ")
+            cantidaddemeses = input("Ingrese el plazo a ordenar para confirmar, 1 = 3 meses| 2 = 6 meses: ")
             if cantidaddemeses=="1":
                 cm="3(trés)Meses"
                 break
             if cantidaddemeses=="2":
                 cm="6(seis)Meses"
                 break
+
             if cantidaddemeses!="1" and cantidaddemeses!="2":
                 print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
-                medidasjp == ("CONFIRMAR las medidas adoptadas en las actuaciones, a fs."+fsresjp+""+"No confirmar el plazo de fs "+fsresjp+".Disponer que el plazo de la "+medidasjpexpro+" ordenada sera de "+cm+"."+"\n")
+                medidasjp = ("CONFIRMAR las medidas adoptadas en las actuaciones, a fs."+fsresjp+".""No confirmar el plazo de fs "+fsresjp+".Disponer que el plazo de la "+medidasjpexpro+" ordenada sera de "+cm+"."+"\n")
                 break
-
+                
+               
                     
         Variablefinal=("Y CONSIDERANDO: Ante la Comisaria "+Comisaria+","+sexo+" "+NombreDenunciante+" D.N.I. Nº "+Dnidenunciante+", con domicilio en "+DomicilioDenunciante+",  ha realizado denuncia por Violencia Familiar en contra de quien fuera su "+VinculoConElDenunciado+", "+sexo1+""+NombreDenunciado+" D.N.I Nº "+Dnidenunciado+", con domicilio en "+DomicilioDenunciado+"."+"\n"
-        "Analizadas las constancias de la causa, se advierte que a fs. "+fsresjp+" obra resolución del Juez de Paz de la localidad de "+Localidad+", conforme lo establece el art.657 del CPCC. y F., el mismo ha dispuesto medidas de "+medidasjp+" y siendo que el Juez de Paz actuante, ha resuelto las medidas pertinentes teniendo en consideración la extrema urgencia que amerita la situación conforme la Ley de Violencia Familiar y en el marco del art. 657 del CPCC y F. y habiéndose remitido a este Juzgado corresponde ratificar la misma en virtud a las facultades atribuidas al suscripto por el art. 36 del CPCC y VF.")
+        "Analizadas las constancias de la causa, se advierte que a fs. "+fsresjp+" obra resolución del Juez de Paz de la localidad de "+Localidad+", conforme lo establece el art.657 del CPCC. y F., el mismo ha dispuesto medidas de "+medidasjpexpro+" y siendo que el Juez de Paz actuante, ha resuelto las medidas pertinentes teniendo en consideración la extrema urgencia que amerita la situación conforme la Ley de Violencia Familiar y en el marco del art. 657 del CPCC y F. y habiéndose remitido a este Juzgado corresponde ratificar la misma en virtud a las facultades atribuidas al suscripto por el art. 36 del CPCC y VF.")
   
     #//////////////////////////////PREGUNTAS PREVIAS AL RESUELVO/////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -233,7 +235,7 @@ def confirmacion():
         reintegrodenunciante = input("¿Solicita la denunciante reintegro al hogar? (1=SI, 0=NO): ")
         if reintegrodenunciante == "1":
             contadorromano=contadorromano+1
-            reintegrodenunciante=(romano[contadorromano]+",con el correspondiente REINTEGRO de "+sexo+""+NombreDenunciante+"a su domicilio")
+            reintegrodenunciante=(",con el correspondiente REINTEGRO de "+sexo+""+NombreDenunciante+"a su domicilio")
             break
         if reintegrodenunciante == "0":
             break
@@ -245,7 +247,7 @@ def confirmacion():
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     resuelvo=("Por lo expuesto y normativa citada:"+"\n"+"RESUELVO: "+romano[0]+" TENER por recibida las presentes actuaciones remitidas por el Juez de Paz de "+Localidad+"  y  avócome al conocimiento de las misma."+"\n"
-                +romano[1]+"CONFIRMAR las medidas adoptadas en las actuaciones, a fs."+fsresjp+". "+plazojp+"."+"\n"
+                +romano[1]+medidasjp
                 +romano[2]+"DISPONER que el grupo familiar de las partes, realicen terapia psicológica por medio de alguna institución pública o privado, por el lapso que dure la medida ordenada, debiéndose acreditar en la causa la misma cada tres meses, y acompañar un informe general y pormenorizado de las sesiones llevadas a cabo, con diez días de anticipación al vencimiento de la medida, bajo apercibimiento de ley." +"\n")
     Variablefinal=Variablefinal+resuelvo  
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -623,7 +625,7 @@ def confirmacion():
     Variablefinal=Variablefinal+finalres
     os.system ("cls")
     time.sleep(2)
-    archivo=open(os.environ['USERPROFILE'] + "\\Desktop\\Juzgado de Violencia Familia\\Exclusion\\ResolucionFin"+" "+ NdeExpediente +".txt","a")
+    archivo=open(os.environ['USERPROFILE'] + "\\Desktop\\Juzgado de Violencia Familia\\Confirmacion\\ResolucionFin"+" "+ NdeExpediente +".txt","a")
     archivo.write("Posadas, "+Dia+" de "+Mes+" del "+anio)
     archivo.write("\n")
     archivo.write("Y VISTOS: Estos autos caratulados: Expte Nº "+ NdeExpediente+"/"+AnioExpediente+ " " + "-" + " " + NombreDenunciante + " " + "C/" +" "+ NombreDenunciado + " " + "S/" + " " + "Violencia Familiar")
