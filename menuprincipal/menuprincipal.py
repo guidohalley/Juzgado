@@ -1,6 +1,5 @@
 import time
 import os
-
 print(" _   _  _         _                     _         ______                    _  _  _              ")
 print("| | | |(_)       | |                   (_)        |  ___|                  (_)| |(_)             ")
 print("| | | | _   ___  | |  ___  _ __    ___  _   __ _  | |_     __ _  _ __ ___   _ | | _   __ _  _ __ ")
@@ -26,7 +25,6 @@ print ("2 - RESOLUCION DE EXCLUSION DE HOGAR")
 print ("3 - RESOLUCION DE CONFIRMACION **FALTA TERMINAR**")
 opcion=input("Ingrese Opcion: ")
 os.system ("cls")
-
 if opcion=="1":
     import os
     print("ESTE PROGRAMA ES UNA VERSION DE PRUEBA ECHO POR GUIDO HALLEY")
@@ -34,9 +32,6 @@ if opcion=="1":
     time.sleep(3)
     import prohibicion
     prohibicion.prohibicion()
-
-
-
 if opcion=="2":
     import os
     print("ESTE PROGRAMA ES UNA VERSION DE PRUEBA ECHO POR GUIDO HALLEY")
@@ -44,7 +39,6 @@ if opcion=="2":
     time.sleep(3)
     import exclusion
     exclusion.exclusion()
-
 if opcion=="3":
     import os
     print("ESTE PROGRAMA ES UNA VERSION DE PRUEBA ECHO POR GUIDO HALLEY")
