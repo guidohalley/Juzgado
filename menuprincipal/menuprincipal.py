@@ -25,6 +25,10 @@ print ("2 - RESOLUCION DE EXCLUSION DE HOGAR")
 print ("3 - RESOLUCION DE CONFIRMACION **FALTA TERMINAR**")
 opcion=input("Ingrese Opcion: ")
 os.system ("cls")
+# realizar funcion que realize automaticamente los parrafos de los oficios una vez las medidas se vallan tomando
+# los expedientes deben ser carpetas con  2 archivos dentro la resolucion y los oficios, 
+# investigar sobre la manera la cual se pueda cambiar el juez sin demasiado escandalo en los oficios cuando SUBROGAN
+
 if opcion=="1":
     import os
     print("ESTE PROGRAMA ES UNA VERSION DE PRUEBA ECHO POR GUIDO HALLEY")
