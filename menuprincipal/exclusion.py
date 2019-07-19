@@ -180,6 +180,8 @@ def exclusion():
         print ("|/// INGRESE DATOS CONCRETOS, EN LO POSIBLE EN 3ERA PERSONA ////|")
         print ("|///////////////////////////////////////////////////////////////|")
 
+
+#modificar la parte de alimentos, y añadir una funcion donde si el denunciante es masculino sacar el parrafo que corresponda ("Violencia de Genero LINEA 193")
     DenunciaConcreta = input("Concretamente la denunciante  manifiesta que: ")
     Variablefinal=("CONSIDERANDO: Que a fs. 2/3,obra denuncia de "+sexo+" "+NombreDenunciante  + " D.N.I" + " N°: "+Dnidenunciante+" con domicilio en " + DomicilioDenunciante + " con N° de Teléfono: "+ NumeroDeTelefonoDenunciante + " contra  quien fuera su " +VinculoConElDenunciado+" "+ sexo1 + " "+NombreDenunciado +
 				" domiciliado en " + DomicilioDenunciado+ ". Con Teléfono N°: " + NumeroDeTelefonoDenunciado+"."+"\n"+
