@@ -546,4 +546,3 @@ def prohibicion():
 	print ("****** ARCHIVO GENERADO EXITOSAMENTE *******")
 	print ("********************************************")
 
-

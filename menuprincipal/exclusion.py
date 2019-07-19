@@ -392,12 +392,14 @@ def exclusion():
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
         if subscreresu == "0":
             break
+
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     if pupilar == "1":
         contadorromano=contadorromano+1
         pupilar=(romano[contadorromano]+"Dese intervención al representante del Ministerio Público Pupilar, a fin que la Defensoría Oficial que por turno corresponda, asuma la representación complementaria de los niños, niñas y adolescentes de autos, en resguardo de sus superiores intereses y dictamine respecto de las medidas adoptadas."+"\n")
         Variablefinal=Variablefinal+pupilar
+
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     if alimentos=="1":
@@ -407,6 +409,7 @@ def exclusion():
         contadorromano=contadorromano+1
         alifinal1=(romano[contadorromano]+"DISPONER que se libre oficio al Banco Macro a fin de que procedan a la apertura de una cuenta a la orden del Juzgado y como perteneciente al juicio de la carátula y abonen a "+sexo+" "+NombreDenunciante+" las sumas depositadas y/o a depositarse en  la misma por el plazo de "+cm+"."+"\n")
         Variablefinal=Variablefinal+alifinal1
+
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     if BotonDepanico == "1":
@@ -415,6 +418,7 @@ def exclusion():
         contadorromano=contadorromano+1
         BotonDepanicoresu2=(romano[contadorromano]+"Efectuada la instalación del botón de pánico a la denunciante, líbrese oficios por medio del SIGED a la Dirección de Violencia y Género de la Policía de Misiones, en coordinación con el Centro Integral de Operaciones (911); a la Subsecretaria de Relaciones con la comunidad -Ministerio de Gobierno- Línea 137 Programa las Víctimas contra las Violencias y Subsecretaria de Seguridad y Justicia -Ministerio de Gobierno- a fin de que reporten a sus respectivas jurisdicciones."+"\n")
         Variablefinal=Variablefinal+BotonDepanicoresu1+BotonDepanicoresu2
+
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////      
     os.system ("cls")
@@ -429,9 +433,9 @@ def exclusion():
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
         if informedeinteraccionfamiliar == "0":
             break
+
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
-
     os.system ("cls")
     while True: 
         cuerpomedico = input("¿Solicita entrevista psicológica por el cuerpo medico forense ? (1=SI, 0=NO): ")
@@ -647,6 +651,7 @@ def exclusion():
     time.sleep(2)
     print ("BY GUIDO HALLEY JUZGADO DE VIOLENCIA FAMILIAR")
     time.sleep(2)
+
 
 #----------------------------------------------------------------------------------------------------------------------------------
 

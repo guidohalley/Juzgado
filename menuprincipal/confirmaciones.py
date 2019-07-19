@@ -87,14 +87,14 @@ def confirmacion():
         if SexoDenunciante == "1" :
             sexo = "la Sra."
         os.system ("cls")
-        print ("_________________________________________________________________")
-        print ("|///////////////////////////////////////////////////////////////|")
-        print ("|Numero de expediente : "+NdeExpediente+"/"+AnioExpediente+"////|")
-        print ("|///////////////////////////////////////////////////////////////|")
-        print ("|///////////////////////////////////////////////////////////////|")
-        print ("|//////////////////   LOS DATOS INGRESADOS SON:   //////////////|")
-        print ("|///////////////////////////////////////////////////////////////|")
-        print ("|///////////////////////////////////////////////////////////////|")
+        print ("___________________________________________________________________")
+        print ("|/////////////////////////////////////////////////////////////////|")
+        print ("|Numero de expediente : "+NdeExpediente+"/"+AnioExpediente+"//////|")
+        print ("|/////////////////////////////////////////////////////////////////|")
+        print ("|/////////////////////////////////////////////////////////////////|")
+        print ("|//////////////////   LOS DATOS INGRESADOS SON:   ////////////////|")
+        print ("|/////////////////////////////////////////////////////////////////|")
+        print ("|/////////////////////////////////////////////////////////////////|")
         print ("|Nombre completo del denunciante:   "+NombreDenunciante+"//////////|")
         if SexoDenunciante == "1":
             print ("|Sexo del/la denunciante:       Femenino///////////////////////|")
@@ -104,7 +104,7 @@ def confirmacion():
         print ("|Domicio del denunciante:          "+DomicilioDenunciante+"////////|")
         print ("|N° de telefono del denunciante:   "+NumeroDeTelefonoDenunciante+"/|")
         print ("|Vinculo con el denunciado:        "+VinculoConElDenunciado+"//////|")
-        print ("_________________________________________________________________")
+        print ("___________________________________________________________________")
         while True:
             preg=input ("Si la informacion es correcta, Ingrese 1, para volver a ingresar presione 0: ")
             if preg == "1":
