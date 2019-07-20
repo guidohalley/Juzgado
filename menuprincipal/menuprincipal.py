@@ -25,9 +25,12 @@ print ("2 - RESOLUCION DE EXCLUSION DE HOGAR")
 print ("3 - RESOLUCION DE CONFIRMACION **FALTA TERMINAR**")
 opcion=input("Ingrese Opcion: ")
 os.system ("cls")
+
 # realizar funcion que realize automaticamente los parrafos de los oficios una vez las medidas se vallan tomando
 # los expedientes deben ser carpetas con  2 archivos dentro la resolucion y los oficios, 
-# investigar sobre la manera la cual se pueda cambiar el juez sin demasiado escandalo en los oficios cuando SUBROGAN
+# investigar sobre la manera la cual se pueda cambiar el juez sin demasiado escandalo en los oficios cuando SUBROGANTE
+# REALIZAR UN PROGRAMA QUE REALICE RENOVACIONES DE MEDIDAS POR 3 O 6 MESES 
+# EL PROGRAMA DE PROVIDENCIAS TIENE QUE ESTAR TODAS LAS MEDIDAS PROGRAMADAS Y MOSTRAR UN MENU EN EL CUAL SELECCIONAR EL PARRAFO POR LISTA NUMERICA, 
 
 if opcion=="1":
     import os
