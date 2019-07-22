@@ -46,12 +46,5 @@ if opcion=="2":
     time.sleep(3)
     import exclusion
     exclusion.exclusion()
-if opcion=="3":
-    import os
-    print("ESTE PROGRAMA ES UNA VERSION DE PRUEBA ECHO POR GUIDO HALLEY")
-    print("EJECUTANDO CONFIRMACIONES ** VERSION TEST ** ")
-    time.sleep(3)
-    import confirmaciones
-    confirmaciones.confirmaciones()
 
 
