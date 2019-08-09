@@ -22,7 +22,7 @@ print("  \__\_\  \_,_| \___|   \__,_| \___| /__/ \___| \__,_|   |_|_\ \___| /__/
 print("                                                                                                             ")
 print ("1 - RESOLUCION DE PROHIBICION DE ACERCAMIENTO")
 print ("2 - RESOLUCION DE EXCLUSION DE HOGAR")
-print ("3 - RESOLUCION DE CONFIRMACION **FALTA TERMINAR**")
+#print ("3 - RESOLUCION DE CONFIRMACION **FALTA TERMINAR**")
 opcion=input("Ingrese Opcion: ")
 os.system ("cls")
 

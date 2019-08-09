@@ -532,6 +532,7 @@ def prohibicion():
     Variablefinal=Variablefinal+finalres
     contadorromano=contadorromano+1
     finalres=(romano[contadorromano]+"Regístrese, Cópiese, Notifíquese."+"\n"+"HYG")
+
     Variablefinal=Variablefinal+finalres
     Variablefinal=Variablefinal.replace("1RESUELVO","RESUELVO")
     os.system ("cls")
@@ -554,7 +555,7 @@ def prohibicion():
     print ("BY GUIDO HALLEY JUZGADO DE VIOLENCIA FAMILIAR")
     time.sleep(2)
     import menuprincipal
-    menuprincipal.menuprincipal()
+    menuprincipal
     #-----------------------------------------------------------POR GUIDO HALLEY------------------------------------------------------
     #-----------------------------------------------------------POR GUIDO HALLEY------------------------------------------------------
     #-----------------------------------------------------------POR GUIDO HALLEY------------------------------------------------------

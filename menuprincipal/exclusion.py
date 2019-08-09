@@ -275,7 +275,7 @@ def exclusion():
         if pupilar != "1" and pupilar != "0":
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
         if pupilar == "1":
-            pupilarhijos=("Asimismo ante la presencia de niños, niñas y adolescentes, corresponde dar intervención a la Defensoría Oficial que por turno corresponda a fin de que asuma la representación complementaria de los mismos y se pronuncie respecto a los supremos intereses de los niños, niñas y adolescentes respecto a la presente denuncia y a las medidas que en su consecuencia se dicten."+"\n")
+            pupilarhijos=(romano[contadorromano]+"Asimismo ante la presencia de niños, niñas y adolescentes, corresponde dar intervención a la Defensoría Oficial que por turno corresponda a fin de que asuma la representación complementaria de los mismos y se pronuncie respecto a los supremos intereses de los niños, niñas y adolescentes respecto a la presente denuncia y a las medidas que en su consecuencia se dicten."+"\n")
             Variablefinal=Variablefinal+pupilarhijos
             while cerrarWhile==0:
                 GuardaProvisoriacons = input("¿Necesita Guardia Provisoria? (1=SI, 0=NO): ")
@@ -294,7 +294,7 @@ def exclusion():
                         ca=input("Nombre del hijo/a " + c + " : ")
                         c=int(c)
                         nombrehijos=ca+", "+ nombrehijos
-                    guardapro = ("En consecuencia, y atento a las manifestaciones de la denunciante y lo expuesto precedentemente, se puede colegir que sería conveniente otorgar el Cuidado Personal Provisorio de las jovenes de marras "+nombrehijos+" a "+sexo+" "+NombreDenunciante+" en beneficio de las jóvenes debiendo cumplir con los deberes inherentes respecto de los niños consagrados por la Convención de los Derechos del Niño y el Pacto de San José de Costa Rica. Por lo expuesto, las disposiciones del art. 234 del C. P. C. y C.; y Convención Internacional sobre los Derechos del Niño. "+"\n")
+                    guardapro = (romano[contadorromano]+"En consecuencia, y atento a las manifestaciones de la denunciante y lo expuesto precedentemente, se puede colegir que sería conveniente otorgar el Cuidado Personal Provisorio de las jovenes de marras "+nombrehijos+" a "+sexo+" "+NombreDenunciante+" en beneficio de las jóvenes debiendo cumplir con los deberes inherentes respecto de los niños consagrados por la Convención de los Derechos del Niño y el Pacto de San José de Costa Rica. Por lo expuesto, las disposiciones del art. 234 del C. P. C. y C.; y Convención Internacional sobre los Derechos del Niño. "+"\n")
                     Variablefinal=Variablefinal+guardapro
                     cerrarWhile=cerrarWhile+1
                     break
@@ -363,7 +363,7 @@ def exclusion():
         if fiscalresu == "0":
             break
 
-    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
+    #///////////////////////////////////////////PREGUNTAS DE MEDIDAS//////////////////////En consecuencia///////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
     os.system ("cls")
@@ -654,7 +654,7 @@ def exclusion():
     time.sleep(3)
     os.system("cls")
     import menuprincipal
-    menuprincipal.menuprincipal()
+    menuprincipal
     print ("BY GUIDO HALLEY JUZGADO DE VIOLENCIA FAMILIAR")
     time.sleep(2)
 #-----------------------------------------------------------POR GUIDO HALLEY------------------------------------------------------
