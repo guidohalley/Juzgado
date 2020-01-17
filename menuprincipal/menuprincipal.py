@@ -23,7 +23,7 @@ print("  \__\_\  \_,_| \___|   \__,_| \___| /__/ \___| \__,_|   |_|_\ \___| /__/
 print("                                                                                                             ")
 print ("1 - RESOLUCION DE PROHIBICION DE ACERCAMIENTO")
 print ("2 - RESOLUCION DE EXCLUSION DE HOGAR")
-#print ("3 - RESOLUCION DE CONFIRMACION **FALTA TERMINAR**")
+print ("3 - RESOLUCION DE CONFIRMACION **FALTA TERMINAR**")
 opcion=input("Ingrese Opcion: ")
 os.system ("cls")
 
@@ -47,5 +47,13 @@ if opcion=="2":
     time.sleep(3)
     import exclusion
     exclusion.exclusion()
+if opcion=="3":
+    import os
+    print("ESTE PROGRAMA ES UNA VERSION DE PRUEBA ECHO POR GUIDO HALLEY")
+    print("EJECUTANDO CONFIRMACIONES*TEST*")
+    time.sleep(3)
+    import confirmaciones
+    confirmaciones.confirmaciones()
+
 
 
