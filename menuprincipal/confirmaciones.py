@@ -257,6 +257,7 @@ def confirmacion():
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     os.system ("cls")
     cerrarWhile=0
+    contadorromano=contadorromano-1
     while cerrarWhile==0:
         pupilar = input("¿Hay menores de 18 años en la causa?  (1=SI, 0=NO): ")
         if pupilar=="0":
