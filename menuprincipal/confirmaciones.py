@@ -124,12 +124,12 @@ def confirmacion():
         NombreDenunciado=input("Nombre completo del denunciado: ")
         NombreDenunciado=NombreDenunciado.upper()
         while True:
-            SexoDenunciado = input("Sexo del/la denunciante (0=Masculino, 1=Femenino): ")
+            SexoDenunciado = input("Sexo del/la denunciado (0=Masculino, 1=Femenino): ")
             if SexoDenunciado != "1" and SexoDenunciado != "0":
                 print ("Respuesta incorrecta, vuelva a ingresar...")
             break
         while True:
-            Dnidenunciado = input("D.N.I del denunciante (Eje: xx.xxx.xxx ) Ingrese 0 para DESCONOCIDO: ")
+            Dnidenunciado = input("D.N.I del denunciado (Eje: xx.xxx.xxx ) Ingrese 0 para DESCONOCIDO: ")
             if Dnidenunciado=="0":
                 Dnidenunciado = "DESCONOCIDO"
                 break
@@ -176,28 +176,31 @@ def confirmacion():
             if preg == "0":
                 break
         while True:
-            medijp=input("Que medidas Tomo el juez de Paz? 1 = PROHIBICION, 2 = EXCLUSION")
-                if medijp == "1":
-                    medidasjpexpro = ("PROHIBICION DE ACERCAMIENTO")
+            medijp=input("Que medidas Tomo el juez de Paz? 1 = PROHIBICION, 2 = EXCLUSION: ")
+            if medijp == "1":
+                medidasjpexpro = ("PROHIBICION DE ACERCAMIENTO")
                 break
-                if medijp == "2":
-                    medidasjpexpro = ("EXCLUSION DEL HOGAR")
+            if medijp == "2":
+                medidasjpexpro = ("EXCLUSION DEL HOGAR")
                 break                                  
                             
         while True:
-            medidasjpconf=input("Confirmar el plazo? ingrese 1 si desea confirmar el plazo ordenado, de lo contrario presione 0")
+            medidasjpconf=input("Confirmar el plazo? ingrese 1 si desea confirmar el plazo ordenado, de lo contrario presione 0: ")
+            
             if medidasjpconf == "1":                
                 medidasjp = ("CONFIRMAR las medidas adoptadas en las actuaciones, tomadas en fs."+fsresjp+"."+"\n")
-            if medidasjp == "0":
-                plzjp=input("escriba el plazo ordenado por el juzgado de paz (ej: 2(dos)años")
-            while True:
-                cantidaddemeses = input("Ingrese el plazo a ordenar para confirmar, 1 = 3 meses| 2 = 6 meses: ")
-                if cantidaddemeses=="1":
-                    cm="3(trés)Meses"
-                    break
-                if cantidaddemeses=="2":
-                    cm="6(seis)Meses"
-                    break
+                break
+
+            if medidasjpconf == "0":
+                plzjp=input("escriba el plazo ordenado por el juzgado de paz (ej: 2(dos)años) : ")
+        while True:
+            cantidaddemeses = input("Ingrese el plazo a ordenar para confirmar, 1 = 3 meses | 2 = 6 meses: ")
+            if cantidaddemeses=="1":
+                cm="3(trés)Meses"
+                break
+            if cantidaddemeses=="2":
+                cm="6(seis)Meses"
+                break
             medidasjp = ("CONFIRMAR las medidas adoptadas en las actuaciones, tomadas en fs."+fsresjp+".No confirmar el plazo de"+plzjp+".Disponer que el plazo de la prohibición de acercamiento ordenada sea de "+cm+"."+"\n")
 
 
