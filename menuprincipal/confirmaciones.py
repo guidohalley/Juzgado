@@ -175,55 +175,32 @@ def confirmacion():
                 print ("OPCION INCORRECTA, VUELVA A INGRESAR LA OPCION.")
             if preg == "0":
                 break
-
-            
-
-        os.system ("cls")
         while True:
-            medidasjpconf=input("Confirmar el plazo? ingrese 1 si desea confirmar el plazo ordenado o 0 si va a cambiar el plazo: ")
-            if medidasjpconf == "1":
-                medidasjp = ("CONFIRMAR las medidas adoptadas en las actuaciones, tomadas en fs."+fsresjp+"."+"\n")
-                break                  
-                while True:
-                    medijp=input(" que medida tomo el juez de paz ? 1 prohibicion de acercamiento, 2 exclusion de hogar:")
-                    if medijp == "1":
-                        medidasjpexpro = ("PROHIBICION DE ACERCAMIENTO")
-                        break
-                    if medijp == "2":
-                        medidasjpexpro = ("EXCLUSION DEL HOGAR")
-                        break    
-               
-                while True:
-                    cantidaddemeses = input("Ingrese el plazo a ordenar para confirmar, 1 = 3 meses| 2 = 6 meses: ")
-                    if cantidaddemeses=="1":
-                        cm="3(trés)Meses"
-                        break
-                    if cantidaddemeses=="2":
-                        cm="6(seis)Meses"
-                        break
-            if medidasjpconf == "0":
-                medidasjp = ("CONFIRMAR las medidas adoptadas en las actuaciones, tomadas en fs."+fsresjp+"."+"\n")
-                break                  
-                while True:
-                    medijp=input(" que medida tomo el juez de paz ? 1 prohibicion de acercamiento, 2 exclusion de hogar:")
-                    if medijp == "1":
-                        medidasjpexpro = ("PROHIBICION DE ACERCAMIENTO")
-                        break
-                    if medijp == "2":
-                        medidasjpexpro = ("EXCLUSION DEL HOGAR")
-                        break    
-               
-                while True:
-                    cantidaddemeses = input("Ingrese el plazo a ordenar para confirmar, 1 = 3 meses| 2 = 6 meses: ")
-                    if cantidaddemeses=="1":
-                        cm="3(trés)Meses"
-                        break
-                    if cantidaddemeses=="2":
-                        cm="6(seis)Meses"
-                        break
-                medidasjp = ("CONFIRMAR las medidas adoptadas en las actuaciones, a fs."+fsresjp+"."+"No confirmar el plazo de fs "+fsresjp+".Disponer que el plazo de la "+medidasjpexpro+" ordenada sera de "+cm+"."+"\n")
+            medijp=input("Que medidas Tomo el juez de Paz? 1 = PROHIBICION, 2 = EXCLUSION")
+                if medijp == "1":
+                    medidasjpexpro = ("PROHIBICION DE ACERCAMIENTO")
                 break
-        
+                if medijp == "2":
+                    medidasjpexpro = ("EXCLUSION DEL HOGAR")
+                break                                  
+                            
+        while True:
+            medidasjpconf=input("Confirmar el plazo? ingrese 1 si desea confirmar el plazo ordenado, de lo contrario presione 0")
+            if medidasjpconf == "1":                
+                medidasjp = ("CONFIRMAR las medidas adoptadas en las actuaciones, tomadas en fs."+fsresjp+"."+"\n")
+            if medidasjp == "0":
+                plzjp=input("escriba el plazo ordenado por el juzgado de paz (ej: 2(dos)años")
+            while True:
+                cantidaddemeses = input("Ingrese el plazo a ordenar para confirmar, 1 = 3 meses| 2 = 6 meses: ")
+                if cantidaddemeses=="1":
+                    cm="3(trés)Meses"
+                    break
+                if cantidaddemeses=="2":
+                    cm="6(seis)Meses"
+                    break
+            medidasjp = ("CONFIRMAR las medidas adoptadas en las actuaciones, tomadas en fs."+fsresjp+".No confirmar el plazo de"+plzjp+".Disponer que el plazo de la prohibición de acercamiento ordenada sea de "+cm+"."+"\n")
+
+
 
         Variablefinal=("Y CONSIDERANDO: Ante la Comisaria "+Comisaria+","+sexo+" "+NombreDenunciante+" D.N.I. Nº "+Dnidenunciante+", con domicilio en "+DomicilioDenunciante+",  ha realizado denuncia por Violencia Familiar en contra de quien fuera su "+VinculoConElDenunciado+", "+sexo1+""+NombreDenunciado+" D.N.I Nº "+Dnidenunciado+", con domicilio en "+DomicilioDenunciado+"."+"\n"
         "Analizadas las constancias de la causa, se advierte que a fs. "+fsresjp+" obra resolución del Juez de Paz de la localidad de "+Localidad+", conforme lo establece el art.657 del CPCC. y F., el mismo ha dispuesto medidas de "+medidasjpexpro+" y siendo que el Juez de Paz actuante, ha resuelto las medidas pertinentes teniendo en consideración la extrema urgencia que amerita la situación conforme la Ley de Violencia Familiar y en el marco del art. 657 del CPCC y F. y habiéndose remitido a este Juzgado corresponde ratificar la misma en virtud a las facultades atribuidas al suscripto por el art. 36 del CPCC y VF.")
