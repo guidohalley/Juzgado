@@ -116,7 +116,7 @@ def confirmacion():
                 break
 #///////////////////////////////////////////////////////////////////////////////////////////////////////
 #///////////////////////////////////////////////////////////////////////////////////////////////////////
-    os.system ("cls")
+
     cerrarWhile=0
     while cerrarWhile==0:
         print ("****************************************RESOLUCION DE CONFIRMACIONES***************************************")
@@ -181,7 +181,7 @@ def confirmacion():
                 medidasjpexpro = ("PROHIBICION DE ACERCAMIENTO")
                 break
             if medijp == "2":
-                medidasjpexpro = ("EXCLUSION DEL HOGAR")
+                medidasjpexpro = ("EXCLUSION DEL HOGAR  Y PROHIBICION DE ACAERCAMIENTO")
                 break                                  
                             
         while True:
@@ -292,7 +292,7 @@ def confirmacion():
                     break
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
-    os.system ("cls")
+     
     while True:
         if pupilar=="1":
             alimentos=input("¿Solicita de alimentos?(1=SI, 0=NO): ")
@@ -313,7 +313,7 @@ def confirmacion():
 
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
-    os.system ("cls")
+     
     while True:
         BotonDepanico = input("¿Solicita boton de panico? (1=SI, 0=NO): ")
         if BotonDepanico=="1":
@@ -342,7 +342,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True:
         fiscalresu = input("¿Solicita intervencion del fiscal de instruccion Penal ? (1=SI, 0=NO): ")
         if fiscalresu == "1":
@@ -358,7 +358,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True: 
         resudefensoria = input("¿Solicita intervencion de defensoria ? (1=SI, 0=NO): ")
         if resudefensoria == "1":
@@ -372,7 +372,7 @@ def confirmacion():
             break
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
-    os.system ("cls")
+     
     while True: 
         subscreresu = input("¿Solicita intervencion de Subscretearia de la mujer y familia ? (1=SI, 0=NO): ")
         if subscreresu == "1":
@@ -409,7 +409,7 @@ def confirmacion():
         Variablefinal=Variablefinal+BotonDepanicoresu1+BotonDepanicoresu2
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////      
-    os.system ("cls")
+     
     while True: 
         informedeinteraccionfamiliar = input("¿Solicita interaccion familiar (Tevez) ? (1=SI, 0=NO): ")
         if informedeinteraccionfamiliar == "1":
@@ -424,7 +424,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True: 
         cuerpomedico = input("¿Solicita entrevista psicológica por el cuerpo medico forense ? (1=SI, 0=NO): ")
         if cuerpomedico == "1":
@@ -439,7 +439,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True: 
         Primeraaudiencia = input("¿Solicita primera audiencia?  (1=SI, 0=NO): ")
         if Primeraaudiencia!="0" and Primeraaudiencia!="1":
@@ -462,7 +462,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True:
         anmac = input ("¿Hay armas (anmac)?(1=SI, 0=NO): ")
         if anmac == "1":
@@ -478,7 +478,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True:
         drogadiccion = input ("¿Necesita de  intervención a la Subsecretaría de Prevención de Adicciones ?(1=SI, 0=NO): ")
         if drogadiccion == "1":
@@ -501,7 +501,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True:
         reingro=input("¿Hay restitucion de bienes?(1=SI, 0=NO): ")
         if reingro=="0":
@@ -522,7 +522,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True:
         direcciondeinfacancia=input("¿Disponer de Dirección de Infancia del Ministerio de Desarrollo Social?(1=SI, 0=NO): ")
         if direcciondeinfacancia=="0":
@@ -538,7 +538,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True:
         busquedayparaderoresu=input("¿Necesita de busqueda y paradero?(1=SI, 0=NO): ")
         if busquedayparaderoresu=="0":
@@ -554,7 +554,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True:
         ancianidad=input("¿Disponer del Departamento de Ancianidad? (1=SI, 0=NO): ")
         if ancianidad=="0":
@@ -570,7 +570,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True:
         reguntacejume=input("¿Enviar a CE.JU.ME?(1=SI, 0=NO): " )
         if reguntacejume=="0":
@@ -585,7 +585,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True:
         serviciosocial=input("¿Solicita Servicio Social?(1=SI, 0=NO): ")
         if serviciosocial=="0":
@@ -601,7 +601,7 @@ def confirmacion():
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    os.system ("cls")
+     
     while True: 
         oficioprovincial = input("¿Solicita Oficio al Registro Provincial de Actuaciones de Violencia? (1=SI, 0=NO): ")
         if oficioprovincial == "1":
@@ -634,7 +634,7 @@ def confirmacion():
     #///////////////////////////////////////////CREADOR DE ARCHIVOS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     print ("************************************************************************************************************************************")
-    print ("********************************************RESOLICION DE EXCLUSION GENERADA EXITOSAMENTE*******************************************")
+    print ("********************************************RESOLUICION DE CONFIRMACION GENERADA EXITOSAMENTE*******************************************")
     print ("************************************************************************************************************************************")
     time.sleep(2)
     print ("BY GUIDO HALLEY JUZGADO DE VIOLENCIA FAMILIAR")
