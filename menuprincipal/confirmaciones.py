@@ -87,24 +87,7 @@ def confirmacion():
         if SexoDenunciante == "1" :
             sexo = "la Sra."
         os.system ("cls")
-        print ("___________________________________________________________________")
-        print ("|/////////////////////////////////////////////////////////////////|")
-        print ("|Numero de expediente : "+NdeExpediente+"/"+AnioExpediente+"//////|")
-        print ("|/////////////////////////////////////////////////////////////////|")
-        print ("|/////////////////////////////////////////////////////////////////|")
-        print ("|//////////////////   LOS DATOS INGRESADOS SON:   ////////////////|")
-        print ("|/////////////////////////////////////////////////////////////////|")
-        print ("|/////////////////////////////////////////////////////////////////|")
-        print ("|Nombre completo del denunciante:   "+NombreDenunciante+"//////////|")
-        if SexoDenunciante == "1":
-            print ("|Sexo del/la denunciante:       Femenino///////////////////////|")
-        if SexoDenunciante == "0":
-            print ("|Sexo del/la denunciante:       Masculino//////////////////////|")
-        print ("|D.N.I del denunciante:            "+ Dnidenunciante+"/////////////|")
-        print ("|Domicio del denunciante:          "+DomicilioDenunciante+"////////|")
-        print ("|N° de telefono del denunciante:   "+NumeroDeTelefonoDenunciante+"/|")
-        print ("|Vinculo con el denunciado:        "+VinculoConElDenunciado+"//////|")
-        print ("___________________________________________________________________")
+       
         while True:
             preg=input ("Si la informacion es correcta, Ingrese 1, para volver a ingresar presione 0: ")
             if preg == "1":
@@ -152,8 +135,30 @@ def confirmacion():
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
         os.system ("cls")
+        print ("___________________________________________________________________")
+        print ("|//////////////////////////////////////////////////////////////////|")
+        print ("|Numero de expediente : "+NdeExpediente+"/"+AnioExpediente+"///////|")
+        print ("|//////////////////////////////////////////////////////////////////|")
+        print ("|//////////////////////////////////////////////////////////////////|")
+        print ("|//////////////////   LOS DATOS DEL DENUNCIANTE SON:   ////////////|")
+        print ("|//////////////////////////////////////////////////////////////////|")
+        print ("|//////////////////////////////////////////////////////////////////|")
+        print ("|Nombre completo del denunciante:   "+NombreDenunciante+"//////////|")
+        if SexoDenunciante == "1":
+            print ("|Sexo del/la denunciante:       Femenino///////////////////////|")
+        if SexoDenunciante == "0":
+            print ("|Sexo del/la denunciante:       Masculino//////////////////////|")
+        print ("|D.N.I del denunciante:            "+ Dnidenunciante+"/////////////|")
+        print ("|Domicio del denunciante:          "+DomicilioDenunciante+"////////|")
+        print ("|N° de telefono del denunciante:   "+NumeroDeTelefonoDenunciante+"/|")
+        print ("|Vinculo con el denunciado:        "+VinculoConElDenunciado+"//////|")
+        print ("___________________________________________________________________")
+        
+        
+        
+        print ("\n___________________________________________________________________")
         print ("|///////////////////////////////////////////////////////////////|")
-        print ("|//////////////////   LOS DATOS INGRESADOS SON:   //////////////|")
+        print ("|//////////////////   LOS DATOS DEL DENUNCIADO SON: ////////////|")
         print ("|///////////////////////////////////////////////////////////////|")
         print ("|///////////////////////////////////////////////////////////////|")
         print ("|Nombre completo del denunciado: "+NombreDenunciado+"///////////|")
@@ -228,7 +233,6 @@ def confirmacion():
 
     #//////////////////////////////PREGUNTAS PREVIAS AL RESUELVO/////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
-    os.system ("cls")
     while True: 
         reintegrodenunciante = input("¿Solicita la denunciante reintegro al hogar? (1=SI, 0=NO): ")
         if reintegrodenunciante == "1":
@@ -255,7 +259,6 @@ def confirmacion():
 
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
-    os.system ("cls")
     cerrarWhile=0
     contadorromano=contadorromano-1
 
@@ -616,7 +619,7 @@ def confirmacion():
     finalres=(romano[contadorromano]+"EXPEDIR copia certificada de la presente si fuere menester."+"\n")
     Variablefinal=Variablefinal+finalres
     contadorromano=contadorromano+1
-    finalres=(romano[contadorromano]+"Regístrese, Cópiese, Notifíquese."+"\n"+"HYG")
+    finalres=(romano[contadorromano]+"Regístrese, Cópiese, Notifíquese."+"\n"+"HGY")
     Variablefinal=Variablefinal+finalres
     os.system ("cls")
     time.sleep(2)

@@ -53,7 +53,7 @@ if opcion=="3":
     print("EJECUTANDO CONFIRMACIONES*TEST*")
     time.sleep(3)
     import confirmaciones
-    confirmaciones.confirmaciones()
+    confirmaciones.confirmacion()
 
 
 
