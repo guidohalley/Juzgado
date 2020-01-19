@@ -267,7 +267,6 @@ def confirmacion():
         if pupilar != "1" and pupilar != "0":
             print ("OPCION INCORRECTA, VUELVA A INGRESAR...")
         if pupilar == "1":
-            pupilarhijos=("Asimismo ante la presencia de niños, niñas y adolescentes, corresponde dar intervención a la Defensoría Oficial que por turno corresponda a fin de que asuma la representación complementaria de los mismos y se pronuncie respecto a los supremos intereses de los niños, niñas y adolescentes respecto a la presente denuncia y a las medidas que en su consecuencia se dicten."+"\n")
             Variablefinal=Variablefinal+pupilarhijos
             while cerrarWhile==0:
                 GuardaProvisoriacons = input("¿Necesita Guardia Provisoria? (1=SI, 0=NO): ")
