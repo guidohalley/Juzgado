@@ -233,7 +233,7 @@ def confirmacion():
         reintegrodenunciante = input("¿Solicita la denunciante reintegro al hogar? (1=SI, 0=NO): ")
         if reintegrodenunciante == "1":
             contadorromano=contadorromano+1
-            reintegrodenunciante=(",con el correspondiente REINTEGRO de "+sexo+""+NombreDenunciante+"a su domicilio")
+            reintegrodenunciante=(", y CUMPLIMENTAR con el correspondiente REINTEGRO de "+sexo+""+NombreDenunciante+"a su domicilio")
             break
         if reintegrodenunciante == "0":
             break
@@ -252,9 +252,6 @@ def confirmacion():
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 
     #///////////////////////////////////////////PREGUNTAS DE MEDIDAS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -344,7 +341,6 @@ def confirmacion():
     while True:
         fiscalresu = input("¿Solicita intervencion del fiscal de instruccion Penal ? (1=SI, 0=NO): ")
         if fiscalresu == "1":
-            contadorromano=contadorromano+1
             fiscalresu=(romano[contadorromano]+"Líbrese Oficio al Fiscal de Instrucción Penal en turno, a fin que se notifique de todo lo actuado en este fuero, adjuntando copia simple de la denuncia obrante a fs. 1/2 y determine si la conducta desplegada por "+sexo1+" "+NombreDenunciado+" D.N.I. Nº"+Dnidenunciado+" "+DomicilioDenunciado+", Con Telefono Nº "+NumeroDeTelefonoDenunciado+", constituye delito de lesiones calificadas (conf. al Código Penal Argentino) y en su caso si corresponde instar la acción penal conforme a sus facultades y competencia."+"\n")
             Variablefinal=Variablefinal+fiscalresu
             break
