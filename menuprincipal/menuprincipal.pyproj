@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>78af9040-6046-4866-863d-160e95957547</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>menuprincipal.py</StartupFile>
+    <StartupFile>desestimatoria.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,6 +29,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="exclusion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="desestimatoria.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MODELOPROGRAMA.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="renovacion.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="prohibicion.py">
