@@ -318,7 +318,7 @@ def prohibicion():
         resudefensoria = input("¿Solicita intervencion de defensoria ? (1=SI, 0=NO): ")
         if resudefensoria == "1":
             contadorromano=contadorromano+1
-            resudefensoria =(romano[contadorromano]+"Girar las presentes a la Defensoría Oficial de Violencia Familiar y/o que corresponda, a fin de que citen a la denunciante para  asumir el patrocinio letrado y/o manifieste si opta por patrocinio particular estando a su cargo la notificación a " + sexo +" "+ NombreDenunciante + "donde este se encuentre; haciéndose saber que deberán diligenciarse en forma urgente las medidas judiciales ordenadas en las  causas de violencia familiar e informar al suscripto, el resultado de dichas diligencias, bajo la exclusiva responsabilidad de la Defensoría Oficial interviniente."+"\n")
+            resudefensoria =(romano[contadorromano]+"Girar las presentes a la Defensoría Oficial de Violencia Familiar y/o que corresponda, a fin de que citen a la denunciante para  asumir el patrocinio letrado y/o manifieste si opta por patrocinio particular estando a su cargo la notificación a " + sexo +" "+ NombreDenunciante + "   ; haciéndose saber que deberán diligenciarse en forma urgente las medidas judiciales ordenadas en las  causas de violencia familiar e informar al suscripto, el resultado de dichas diligencias, bajo la exclusiva responsabilidad de la Defensoría Oficial interviniente."+"\n")
             Variablefinal = Variablefinal+resudefensoria
             break
         if resudefensoria!="0" and resudefensoria!="1":
