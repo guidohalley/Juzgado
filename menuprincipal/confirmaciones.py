@@ -628,7 +628,7 @@ def confirmacion():
     archivo.write("\n")
     archivo.write("Y VISTOS: Estos autos caratulados: Expte Nº "+ NdeExpediente+"/"+AnioExpediente+ " " + "-" + " " + NombreDenunciante + " " + "C/" +" "+ NombreDenunciado + " " + "S/" + " " + "Violencia Familiar")
     archivo.write("\n")
-    archivo.write(Variablefinal)
+    archivo.write(Variablefinal7318
     archivo.close()
     #///////////////////////////////////////////CREADOR DE ARCHIVOS/////////////////////////////////////////
     #///////////////////////////////////////////////////////////////////////////////////////////////////////
